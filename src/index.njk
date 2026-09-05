@@ -19,6 +19,26 @@ permalink: /
 
 <section class="band">
   <div class="wrap">
+    <div class="band-head"><h2>Featured</h2><p class="band-note">{{ featured.intro }}</p></div>
+    <div class="books featured">
+    {%- for slug in featured.featured %}{% for b in books %}{% if b.slug == slug %}{% include "bookcard.njk" %}{% endif %}{% endfor %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="band white">
+  <div class="wrap">
+    <div class="band-head"><h2>Award winners</h2><a class="textlink" href="/awards/">All awards →</a></div>
+    <div class="award-row">
+    {%- for a in featured.awards.slice(0, 6) %}{% for b in books %}{% if b.slug == a.slug %}
+      <a class="award-card" href="/books/{{ b.slug }}/"><img src="{{ b.cover }}" alt="" loading="lazy" width="400" height="600"><span><strong>{{ b.title }}</strong><em>{{ a.award }}</em></span></a>
+    {%- endif %}{% endfor %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
     <div class="band-head"><h2>New this season</h2><a class="textlink" href="/books/">All {{ books.length }} titles →</a></div>
     <div class="books">
     {%- for b in books | recent(10) %}{% include "bookcard.njk" %}{% endfor %}

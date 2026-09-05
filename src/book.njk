@@ -24,6 +24,7 @@ eleventyComputed:
     <div>
       <p class="kicker crumbs"><a href="/books/">Books</a>{% for c in b.cats %} · <a href="/category/{{ c | slugify2 }}/">{{ c }}</a>{% endfor %}</p>
       <h1>{{ b.title }}</h1>
+      {% if b.award %}<p class="award-line">{{ b.award }}</p>{% endif %}
       {% if b.author %}<p class="byline">by <a href="/authors/{{ b.authorSlug }}/">{{ b.author }}</a></p>{% endif %}
       <div class="prose">{% for p in b.desc %}<p>{{ p }}</p>{% endfor %}</div>
       {% if b.about %}<div class="endorse"><h3>About the author</h3>{% for p in b.about %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}

@@ -9,3 +9,10 @@ collections:
     label: Site
     files:
       - { name: site, label: Settings, file: src/_data/site.json, fields: [ { name: email, label: Email }, { name: phone, label: Phone }, { name: titles, label: Title count phrase } ] }
+      - name: featured
+        label: Featured and awards
+        file: src/_data/featured.json
+        fields:
+          - { name: intro, label: Featured intro }
+          - { name: featured, label: Featured book slugs (in order), widget: list, field: { name: slug, label: Slug } }
+          - { name: awards, label: Award winners, widget: list, fields: [ { name: slug, label: Book slug }, { name: award, label: Award } ] }

@@ -1,0 +1,67 @@
+{
+ "intro": "Books our readers keep coming back to, and the ones the house is proudest of.",
+ "featured": [
+  "doesgodexist",
+  "memorize-the-mass",
+  "findingflannery",
+  "faithincrisis",
+  "challengetothechurch",
+  "motherofthechurch",
+  "sacredbraille",
+  "medjugorje",
+  "altaragainstaltar",
+  "lucherium",
+  "diaryofacountrymother",
+  "spiritualhusbands"
+ ],
+ "awards": [
+  {
+   "slug": "medjugorje",
+   "award": "Silver Medal, Memoir, Catholic Media Association"
+  },
+  {
+   "slug": "sacredbraille",
+   "award": "Honorable Mention, Catholic Media Association 2024"
+  },
+  {
+   "slug": "childrenofthechapel",
+   "award": "Bronze, Catholic Media Association 2025"
+  },
+  {
+   "slug": "heartlove",
+   "award": "Second Place, Backlist Beauty, Catholic Media Awards 2021"
+  },
+  {
+   "slug": "adventures",
+   "award": "Third Place, Backlist Beauty, Catholic Media Awards 2021"
+  },
+  {
+   "slug": "redemption",
+   "award": "Third Place, Catholic Novel and Best Front Cover, Catholic Media Awards 2021"
+  },
+  {
+   "slug": "pars",
+   "award": "Third Place, Life and Dignity, Catholic Media Book Awards 2021"
+  },
+  {
+   "slug": "nicodemus",
+   "award": "Third Place, Catholic Novel, Catholic Book Awards 2020"
+  },
+  {
+   "slug": "servantofgod",
+   "award": "Honorable Mention, First-Time Author; Third Place, Marriage and Family Living, Catholic Media Association"
+  },
+  {
+   "slug": "ennoblingencounters",
+   "award": "Finalist, American Best Book Awards 2022"
+  },
+  {
+   "slug": "lucherium",
+   "award": "Christlit Book Award 2025"
+  },
+  {
+   "slug": "wiseguy",
+   "award": "Third Place, Cover Art, Catholic Book Awards 2020"
+  }
+ ]
+}

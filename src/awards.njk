@@ -1,0 +1,14 @@
+---
+layout: base.njk
+title: Award winners
+permalink: /awards/
+description: "En Route books recognized by the Catholic Media Association, the Catholic Book Awards, and others."
+---
+<div class="wrap page-head"><p class="kicker">Recognition</p><h1>Award winners</h1><p class="lede">En Route titles recognized by the Catholic Media Association, the Catholic Book Awards, the Christlit Book Award, and the American Best Book Awards.</p></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap award-list">
+  {%- for a in featured.awards %}{% for b in books %}{% if b.slug == a.slug %}
+    <a class="award-card" href="/books/{{ b.slug }}/"><img src="{{ b.cover }}" alt="" loading="lazy" width="400" height="600"><span><strong>{{ b.title }}</strong>{% if b.author %}<small>{{ b.author }}</small>{% endif %}<em>{{ a.award }}</em></span></a>
+  {%- endif %}{% endfor %}{% endfor %}
+  </div>
+</section>

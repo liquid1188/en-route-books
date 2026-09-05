@@ -23,11 +23,13 @@
     <label for="menu" class="menu-btn"><span></span><span></span></label>
     <nav class="nav" aria-label="Main">
       <a href="/books/"{% if '/books' in page.url or '/category' in page.url %} aria-current="page"{% endif %}>Books</a>
+      <a href="/awards/"{% if page.url == '/awards/' %} aria-current="page"{% endif %}>Awards</a>
       <a href="/authors/"{% if '/authors' in page.url %} aria-current="page"{% endif %}>Authors</a>
       <a href="/radio/"{% if page.url == '/radio/' %} aria-current="page"{% endif %}>WCAT Radio</a>
       <a href="/free/"{% if page.url == '/free/' %} aria-current="page"{% endif %}>Free</a>
       <a href="/about/"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
       <a href="/wholesale/"{% if page.url == '/wholesale/' %} aria-current="page"{% endif %}>Wholesale</a>
+      <form class="nav-search" action="/books/" method="get" role="search"><input type="search" name="q" placeholder="Search books" aria-label="Search books"></form>
       <a class="btn small" href="/submissions/">Submit a manuscript</a>
     </nav>
   </div>

@@ -213,3 +213,23 @@ table.rates td:last-child { text-align: right; font-weight: 600; }
 .site-foot.v2 .fcol a.crow, .site-foot.v2 .fcol span.crow { display: flex; align-items: center; gap: .75rem; }
 .site-foot.v2 .fcol a.soc { display: inline-flex; align-items: center; justify-content: center; padding: 0; width: 38px; height: 38px; }
 .site-foot.v2 .fcol a.soc svg { width: 18px; height: 18px; display: block; }
+
+.cover-wrap { position: relative; display: block; }
+.ribbon { position: absolute; top: .6rem; left: 0; background: var(--brass); color: #fff; font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; padding: .3rem .6rem; }
+.ribbon.free { background: var(--harbor); }
+.award-line { color: var(--brass); font-weight: 600; font-size: .95rem; margin: -.4rem 0 1rem; }
+.band-note { margin: 0; color: var(--ink-2); font-size: 1rem; max-width: 48ch; }
+.award-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem 2rem; }
+.award-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem 2rem; }
+.award-card { display: grid; grid-template-columns: 96px 1fr; gap: 1.1rem; align-items: center; text-decoration: none; color: inherit; padding: 1rem; background: var(--white); border: 1px solid var(--rule); }
+.award-list .award-card { background: var(--paper); }
+.award-card img { width: 96px; aspect-ratio: 2 / 3; object-fit: cover; box-shadow: 0 6px 16px -10px rgba(0,0,0,.5); }
+.award-card strong { display: block; font-family: var(--display); font-size: 1.15rem; line-height: 1.25; margin-bottom: .3rem; }
+.award-card small { display: block; color: var(--ink-2); font-size: .85rem; margin-bottom: .3rem; }
+.award-card em { display: block; font-style: normal; color: var(--brass); font-size: .85rem; font-weight: 600; }
+.award-card:hover strong { color: var(--harbor-2); text-decoration: underline; }
+@media (max-width: 900px) { .award-row, .award-list { grid-template-columns: 1fr; } }
+.nav-search input { font: inherit; font-size: .9rem; padding: .45rem .7rem; border: 1px solid rgba(255,255,255,.25); background: rgba(255,255,255,.08); color: #fff; width: 150px; }
+.nav-search input::placeholder { color: rgba(255,255,255,.55); }
+@media (max-width: 1100px) { .nav-search { display: none; } }
+.author-bio h2 { font-size: 1.4rem; }

@@ -9,4 +9,8 @@ eleventyComputed:
   title: "{{ a.name }}"
 ---
 <div class="wrap page-head"><p class="kicker"><a href="/authors/" style="text-decoration:none;color:inherit">Authors</a></p><h1>{{ a.name }}</h1><p class="lede">{{ a.books.length }} title{% if a.books.length != 1 %}s{% endif %} with En Route.</p></div>
-<section class="band" style="padding-top:1.5rem"><div class="wrap"><div class="books">{%- for b in books | bySlugs(a.books) %}{% include "bookcard.njk" %}{% endfor %}</div></div></section>
+{%- set bio = "" %}{% for b in books | bySlugs(a.books) %}{% if not bio and b.about %}{% set bio = b.about %}{% endif %}{% endfor %}
+<section class="band" style="padding-top:1.5rem"><div class="wrap{% if bio %} two-col top{% endif %}">
+  {% if bio %}<div class="prose author-bio"><h2>About</h2>{% for p in bio %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
+  <div><h2 style="font-size:1.4rem;margin-bottom:1rem">Books</h2><div class="books">{%- for b in books | bySlugs(a.books) %}{% include "bookcard.njk" %}{% endfor %}</div></div>
+</div></section>
