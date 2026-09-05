@@ -27,7 +27,9 @@ eleventyComputed:
       {% if b.award %}<p class="award-line">{{ b.award }}</p>{% endif %}
       {% if b.author %}<p class="byline">by <a href="/authors/{{ b.authorSlug }}/">{{ b.author }}</a></p>{% endif %}
       <div class="prose">{% for p in b.desc %}<p>{{ p }}</p>{% endfor %}</div>
-      {% if b.about %}<div class="endorse"><h3>About the author</h3>{% for p in b.about %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
+      {% if b.about %}<div class="endorse about-author">{% if b.photo %}<img class="headshot" src="{{ b.photo }}" alt="{{ b.author }}" loading="lazy">{% endif %}<h3>About the author</h3>{% for p in b.about %}<p>{{ p }}</p>{% endfor %}{% if b.authorLinks.length %}<p class="author-links">{% for l in b.authorLinks %}<a href="{{ l.url }}">{{ l.label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}</div>{% endif %}
+      {% if b.reviews.length or b.media.length %}<div class="endorse"><h3>Reviews and interviews</h3><ul class="reviews">{% for r in b.reviews %}<li>{{ r.text | replace(" To read, click here .", "") | replace(" To read, click here.", "") | replace("click here .", "") }}{% for l in r.links %} <a href="{{ l.url }}">{% if l.label == "here" %}Read →{% else %}{{ l.label }} →{% endif %}</a>{% endfor %}</li>{% endfor %}{% for m in b.media %}<li><a href="{{ m.url }}">{{ m.label }} →</a></li>{% endfor %}</ul></div>{% endif %}
+      {% if b.videos.length %}<div class="endorse"><h3>Watch and listen</h3><div class="videos">{% for v in b.videos %}<a class="video" href="https://www.youtube.com/watch?v={{ v }}"><img src="https://i.ytimg.com/vi/{{ v }}/hqdefault.jpg" alt="" loading="lazy"><span class="play">▶</span></a>{% endfor %}</div></div>{% endif %}
       {% if b.praise.length %}<div class="endorse"><h3>Praise</h3>{% for p in b.praise %}<blockquote><p>{{ p.q }}</p>{% if p.by %}<cite>{{ p.by }}</cite>{% endif %}</blockquote>{% endfor %}</div>{% endif %}
     </div>
   </div>

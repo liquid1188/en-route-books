@@ -14,7 +14,7 @@ description: "All En Route authors, by last name."
     <div class="az-group" id="{{ l | replace('#','other') }}">
       <h2>{{ l }}</h2>
       <div class="authors">
-      {%- for a in authors %}{% if a.letter == l %}<a href="/authors/{{ a.slug }}/" data-n="{{ a.name | lower }}">{{ a.name }} <span>{{ a.books.length }}</span></a>{% endif %}{% endfor %}
+      {%- for a in authors %}{% if a.letter == l %}<a href="/authors/{{ a.slug }}/" data-n="{{ a.name | lower }}">{% if a.photo %}<img class="mini" src="{{ a.photo }}" alt="" loading="lazy">{% endif %}{{ a.name }} <span>{{ a.books.length }}</span></a>{% endif %}{% endfor %}
       </div>
     </div>
     {%- endfor %}
