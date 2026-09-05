@@ -22,7 +22,7 @@ eleventyComputed:
       </div>
     </div>
     <div>
-      <p class="kicker">{% for c in b.cats %}<a href="/category/{{ c | slugify2 }}/" style="text-decoration:none;color:inherit">{{ c }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+      <p class="kicker crumbs"><a href="/books/">Books</a>{% for c in b.cats %} · <a href="/category/{{ c | slugify2 }}/">{{ c }}</a>{% endfor %}</p>
       <h1>{{ b.title }}</h1>
       {% if b.author %}<p class="byline">by <a href="/authors/{{ b.authorSlug }}/">{{ b.author }}</a></p>{% endif %}
       <div class="prose">{% for p in b.desc %}<p>{{ p }}</p>{% endfor %}</div>
@@ -31,3 +31,21 @@ eleventyComputed:
     </div>
   </div>
 </section>
+{%- set more = [] %}{% for o in books %}{% if o.slug != b.slug and b.author and o.author == b.author %}{% set more = (more.push(o), more) %}{% endif %}{% endfor %}
+{%- if more.length %}
+<section class="band ivory-2">
+  <div class="wrap">
+    <div class="band-head"><h2>Also by {{ b.author }}</h2><a class="textlink" href="/authors/{{ b.authorSlug }}/">All {{ more.length + 1 }} titles →</a></div>
+    <div class="books">{% for o in more.slice(0, 6) %}{% set b = o %}{% include "bookcard.njk" %}{% endfor %}</div>
+  </div>
+</section>
+{%- endif %}
+{%- set rel = [] %}{% if b.cats.length %}{% for o in books %}{% if o.slug != b.slug and o.author != b.author and b.cats[0] in o.cats and rel.length < 6 %}{% set rel = (rel.push(o), rel) %}{% endif %}{% endfor %}{% endif %}
+{%- if rel.length %}
+<section class="band">
+  <div class="wrap">
+    <div class="band-head"><h2>More in {{ b.cats[0] }}</h2><a class="textlink" href="/category/{{ b.cats[0] | slugify2 }}/">Browse the subject →</a></div>
+    <div class="books">{% for o in rel %}{% set b = o %}{% include "bookcard.njk" %}{% endfor %}</div>
+  </div>
+</section>
+{%- endif %}

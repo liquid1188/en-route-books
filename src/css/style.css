@@ -153,3 +153,14 @@ table.rates td:last-child { text-align: right; font-weight: 600; }
 .crest-fig { margin: 2rem 0; display: flex; gap: 1.5rem; align-items: center; }
 .crest-fig img { width: 140px; height: auto; flex: none; }
 .crest-fig figcaption { font-size: .95rem; color: var(--ink-2); max-width: 32ch; }
+.az { display: flex; flex-wrap: wrap; gap: .3rem; margin-bottom: 1.2rem; }
+.az a { display: inline-block; min-width: 2.1rem; text-align: center; padding: .4rem .5rem; border: 1px solid var(--rule); text-decoration: none; font-weight: 600; font-size: .95rem; background: var(--white); }
+.az a:hover { border-color: var(--harbor); }
+.az-filter { width: 100%; max-width: 420px; font: inherit; padding: .8rem .9rem; border: 1px solid var(--rule); background: var(--white); margin-bottom: 2rem; }
+.az-group { margin-bottom: 2.5rem; scroll-margin-top: 90px; }
+.az-group h2 { font-size: 2rem; border-bottom: 1px solid var(--rule); padding-bottom: .4rem; margin-bottom: 1rem; }
+.recog-logo { height: 60px; width: auto; display: block; margin-bottom: 1.2rem; color: var(--harbor); }
+.recog-logo.wide { height: 60px; }
+.crumbs a { text-decoration: none; color: inherit; }
+.crumbs a:hover { text-decoration: underline; }
+.band.ivory-2 { background: var(--paper-2); }

@@ -2,10 +2,28 @@
 layout: base.njk
 title: Authors
 permalink: /authors/
+description: "All En Route authors, by last name."
 ---
-<div class="wrap page-head"><h1>Authors</h1><p class="lede">{{ authors.length }} authors, scholars and clergy and poets and first-timers, in one alphabet.</p></div>
+<div class="wrap page-head"><h1>Authors</h1><p class="lede">{{ authors.length }} authors, scholars and clergy and poets and first-timers, by last name.</p></div>
 <section class="band" style="padding-top:1.5rem">
-  <div class="wrap authors">
-  {%- for a in authors %}<a href="/authors/{{ a.slug }}/">{{ a.name }} <span>{{ a.books.length }}</span></a>{% endfor %}
+  <div class="wrap">
+    {%- set letters = [] %}{% for a in authors %}{% if a.letter not in letters %}{% set letters = (letters.push(a.letter), letters) %}{% endif %}{% endfor %}
+    <nav class="az" aria-label="Jump to letter">{% for l in letters %}<a href="#{{ l | replace('#','other') }}">{{ l }}</a>{% endfor %}</nav>
+    <input class="az-filter" id="af" type="search" placeholder="Filter authors" aria-label="Filter authors" autocomplete="off">
+    {%- for l in letters %}
+    <div class="az-group" id="{{ l | replace('#','other') }}">
+      <h2>{{ l }}</h2>
+      <div class="authors">
+      {%- for a in authors %}{% if a.letter == l %}<a href="/authors/{{ a.slug }}/" data-n="{{ a.name | lower }}">{{ a.name }} <span>{{ a.books.length }}</span></a>{% endif %}{% endfor %}
+      </div>
+    </div>
+    {%- endfor %}
+    <p class="az-empty" hidden>No authors match.</p>
   </div>
 </section>
+<script>
+const af=document.getElementById('af');
+af.addEventListener('input',()=>{const q=af.value.trim().toLowerCase();let any=false;
+document.querySelectorAll('.az-group').forEach(g=>{let n=0;g.querySelectorAll('.authors a').forEach(a=>{const m=!q||a.dataset.n.includes(q);a.hidden=!m;if(m)n++;});g.hidden=!n;if(n)any=true;});
+document.querySelector('.az').hidden=!!q;document.querySelector('.az-empty').hidden=any;});
+</script>
