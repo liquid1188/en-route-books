@@ -26,7 +26,9 @@ p { margin: 0 0 1.1em; max-width: 66ch; }
 .site-head { background: var(--harbor); color: #fff; position: sticky; top: 0; z-index: 30; }
 .bar { display: flex; align-items: center; justify-content: space-between; height: 78px; gap: 1rem; }
 .brand { display: flex; align-items: center; gap: .7rem; text-decoration: none; color: #fff; }
-.brand img { height: 44px; width: auto; }
+.brand img { height: 46px; width: auto; }
+@media (max-width: 520px) { .brand img { height: 32px; } }
+.foot-crest { height: 72px; width: auto; margin-bottom: 1rem; }
 .brand span { font-family: var(--display); font-size: .95rem; line-height: 1.05; }
 .brand b { display: block; font-size: 1.35rem; font-weight: 600; letter-spacing: .02em; }
 .nav { display: flex; align-items: center; gap: 1.3rem; }
@@ -148,3 +150,6 @@ table.rates td:last-child { text-align: right; font-weight: 600; }
 .recog-cards p { margin: 0; font-size: .98rem; color: var(--ink-2); }
 .recog-cards .kicker { margin-bottom: .6rem; }
 @media (max-width: 800px) { .recog-cards { grid-template-columns: 1fr; } }
+.crest-fig { margin: 2rem 0; display: flex; gap: 1.5rem; align-items: center; }
+.crest-fig img { width: 140px; height: auto; flex: none; }
+.crest-fig figcaption { font-size: .95rem; color: var(--ink-2); max-width: 32ch; }

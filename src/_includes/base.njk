@@ -6,19 +6,19 @@
   <title>{% if title %}{{ title }} · {% endif %}{{ site.name }}</title>
   <meta name="description" content="{{ description or 'A Catholic publishing house in St. Louis. Nearly 700 titles in theology, philosophy, spirituality, literature, poetry, and children\'s books since 2014.' }}">
   {% if site.setupMode %}<meta name="robots" content="noindex, nofollow">{% endif %}
-  <link rel="icon" href="/images/logo.jpg">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css?v={{ buildId }}">
   <meta property="og:title" content="{{ title or site.name }}">
-  <meta property="og:image" content="{{ ogImage or (site.url ~ '/images/header.jpg') }}">
+  <meta property="og:image" content="{{ ogImage or (site.url ~ '/images/crest-512.png') }}">
 </head>
 <body{% if page.url == "/" %} class="home"{% endif %}>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head">
   <div class="wrap bar">
-    <a class="brand" href="/"><img src="/images/logo.jpg" alt="" width="512" height="512"><span><b>En Route</b>Books and Media</span></a>
+    <a class="brand" href="/"><img src="/images/wordmark-white.png" alt="En Route Books and Media. Make the time." width="1707" height="355"></a>
     <input type="checkbox" id="menu" class="menu-toggle" aria-label="Open menu">
     <label for="menu" class="menu-btn"><span></span><span></span></label>
     <nav class="nav" aria-label="Main">
@@ -36,6 +36,7 @@
 <footer class="site-foot">
   <div class="wrap foot-grid">
     <div>
+      <img class="foot-crest" src="/images/crest-white.png" alt="" width="512" height="637" loading="lazy">
       <p class="foot-brand">En Route Books and Media</p>
       <p class="foot-motto">Make the time.</p>
       <p class="foot-tag">A Catholic publishing house in St. Louis, Missouri, founded in 2014 by Dr. Sebastian Mahfood, OP.</p>
