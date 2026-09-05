@@ -1,0 +1,33 @@
+---
+layout: base.njk
+pagination:
+  data: books
+  size: 1
+  alias: b
+permalink: "/books/{{ b.slug }}/"
+eleventyComputed:
+  title: "{{ b.title }}{% if b.author %} by {{ b.author }}{% endif %}"
+  description: "{{ b.desc[0] | default(b.title) | truncate(155) }}"
+  ogImage: "{{ b.cover }}"
+---
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Book","name":{{ b.title | dump | safe }},{% if b.author %}"author":{"@type":"Person","name":{{ b.author | dump | safe }}},{% endif %}"publisher":{"@type":"Organization","name":"En Route Books and Media"},"image":{{ b.cover | dump | safe }}}</script>
+<section class="band" style="padding-top:2rem">
+  <div class="wrap book-page">
+    <div class="side">
+      <img class="cover" src="{{ b.cover }}" alt="Cover of {{ b.title }}" width="400" height="600">
+      <div class="buy">
+        {% if b.price %}<p>{{ b.price }}</p>{% endif %}
+        {% for u in b.buy %}<a class="btn" href="{{ u }}">{% if 'amazon' in u or 'amzn' in u %}Buy on Amazon{% else %}Buy{% endif %}</a>{% endfor %}
+        <a class="btn ghost" href="{{ b.url }}">Order from En Route</a>
+        <p style="margin:.8rem 0 0;font-size:.88rem;color:var(--ink-2)">Bookstores, parishes, and groups: <a href="/wholesale/">wholesale pricing</a>.</p>
+      </div>
+    </div>
+    <div>
+      <p class="kicker">{% for c in b.cats %}<a href="/category/{{ c | slugify2 }}/" style="text-decoration:none;color:inherit">{{ c }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>
+      <h1>{{ b.title }}</h1>
+      {% if b.author %}<p class="byline">by <a href="/authors/{{ b.authorSlug }}/">{{ b.author }}</a></p>{% endif %}
+      <div class="prose">{% for p in b.desc %}<p>{{ p }}</p>{% endfor %}</div>
+      {% if b.quotes.length %}<div class="endorse"><h3>Praise</h3>{% for qq in b.quotes %}<blockquote>{{ qq }}</blockquote>{% endfor %}</div>{% endif %}
+    </div>
+  </div>
+</section>

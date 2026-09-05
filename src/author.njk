@@ -1,0 +1,12 @@
+---
+layout: base.njk
+pagination:
+  data: authors
+  size: 1
+  alias: a
+permalink: "/authors/{{ a.slug }}/"
+eleventyComputed:
+  title: "{{ a.name }}"
+---
+<div class="wrap page-head"><p class="kicker"><a href="/authors/" style="text-decoration:none;color:inherit">Authors</a></p><h1>{{ a.name }}</h1><p class="lede">{{ a.books.length }} title{% if a.books.length != 1 %}s{% endif %} with En Route.</p></div>
+<section class="band" style="padding-top:1.5rem"><div class="wrap"><div class="books">{%- for b in books | bySlugs(a.books) %}{% include "bookcard.njk" %}{% endfor %}</div></div></section>

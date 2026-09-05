@@ -1,0 +1,18 @@
+---
+layout: base.njk
+pagination:
+  data: categories
+  size: 1
+  alias: cat
+permalink: "/category/{{ cat.slug }}/"
+eleventyComputed:
+  title: "{{ cat.name }}"
+---
+<div class="wrap page-head"><p class="kicker"><a href="/books/" style="text-decoration:none;color:inherit">Books</a></p><h1>{{ cat.name }}</h1><p class="lede">{{ cat.count }} titles.</p></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap">
+    <div class="books">
+    {%- for b in books | inCat(cat.name) %}{% include "bookcard.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+---
+layout: base.njk
+title: Books
+permalink: /books/
+---
+<div class="wrap page-head"><h1>Books</h1><p class="lede">{{ books.length }} titles. Search by title or author, or browse by subject.</p></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap">
+    <form class="search-bar" onsubmit="return false"><input id="q" type="search" placeholder="Search by title or author" aria-label="Search books" autocomplete="off"><button class="btn brass" type="button" onclick="run()">Search</button></form>
+    <div class="cats" style="margin-top:1.5rem">
+    {%- for c in categories %}<a href="/category/{{ c.slug }}/">{{ c.name }}<span>{{ c.count }}</span></a>{% endfor %}
+    </div>
+    <p id="count" class="caption" style="margin-top:2rem;color:var(--ink-2)"></p>
+    <div id="results" class="books"></div>
+  </div>
+</section>
+<script>
+let idx=null;const q=document.getElementById('q'),out=document.getElementById('results'),count=document.getElementById('count');
+async function load(){ if(!idx){ const r=await fetch('/search.json'); idx=await r.json(); } }
+function render(list,label){ count.textContent=label; out.innerHTML=list.slice(0,120).map(b=>`<a class="book" href="/books/${b.s}/"><img src="${b.c}" alt="" loading="lazy" width="400" height="600"><h3>${b.t}</h3>${b.a?`<p>${b.a}</p>`:''}</a>`).join(''); }
+async function run(){ await load(); const v=q.value.trim().toLowerCase(); if(!v){ render(idx,`${idx.length} titles`); return; } const hits=idx.filter(b=>(b.t+' '+b.a).toLowerCase().includes(v)); render(hits,`${hits.length} result${hits.length===1?'':'s'} for “${q.value.trim()}”`); }
+q.addEventListener('input',()=>{ clearTimeout(window._t); window._t=setTimeout(run,180); });
+const p=new URLSearchParams(location.search).get('q'); if(p){ q.value=p; } run();
+</script>

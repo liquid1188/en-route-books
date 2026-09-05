@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}{{ site.name }}</title>
+  <meta name="description" content="{{ description or 'A Catholic publishing house in St. Louis. Nearly 700 titles in theology, philosophy, spirituality, literature, poetry, and children\'s books since 2014.' }}">
+  {% if site.setupMode %}<meta name="robots" content="noindex, nofollow">{% endif %}
+  <link rel="icon" href="/images/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css?v={{ buildId }}">
+  <meta property="og:title" content="{{ title or site.name }}">
+  <meta property="og:image" content="{{ ogImage or (site.url ~ '/images/header.jpg') }}">
+</head>
+<body{% if page.url == "/" %} class="home"{% endif %}>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap bar">
+    <a class="brand" href="/"><img src="/images/wheel-white.png" alt="" width="480" height="480"><span><b>En Route</b>Books and Media</span></a>
+    <input type="checkbox" id="menu" class="menu-toggle" aria-label="Open menu">
+    <label for="menu" class="menu-btn"><span></span><span></span></label>
+    <nav class="nav" aria-label="Main">
+      <a href="/books/"{% if '/books' in page.url or '/category' in page.url %} aria-current="page"{% endif %}>Books</a>
+      <a href="/authors/"{% if '/authors' in page.url %} aria-current="page"{% endif %}>Authors</a>
+      <a href="/radio/"{% if page.url == '/radio/' %} aria-current="page"{% endif %}>WCAT Radio</a>
+      <a href="/free/"{% if page.url == '/free/' %} aria-current="page"{% endif %}>Free</a>
+      <a href="/about/"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
+      <a href="/wholesale/"{% if page.url == '/wholesale/' %} aria-current="page"{% endif %}>Wholesale</a>
+      <a class="btn small" href="/submissions/">Submit a manuscript</a>
+    </nav>
+  </div>
+</header>
+<main id="main">{{ content | safe }}</main>
+<footer class="site-foot">
+  <div class="wrap foot-grid">
+    <div>
+      <p class="foot-brand">En Route Books and Media</p>
+      <p class="foot-tag">A Catholic publishing house in St. Louis, Missouri, founded in 2014 by Dr. Sebastian Mahfood, OP. Make the time.</p>
+    </div>
+    <div>
+      <h3>Read</h3>
+      <a href="/books/">All books</a>
+      <a href="/authors/">Authors</a>
+      <a href="/free/">Free downloads</a>
+      <a href="/radio/">WCAT Radio and TV</a>
+    </div>
+    <div>
+      <h3>Work with us</h3>
+      <a href="/submissions/">Submit a manuscript</a>
+      <a href="/wholesale/">Wholesale and bulk orders</a>
+      <a href="/about/">About En Route</a>
+      <a href="/contact/">Contact</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+      <a href="tel:3147061009">{{ site.phone }}</a>
+      <span class="foot-tag">{{ site.city }}</span>
+    </div>
+  </div>
+  <div class="wrap foot-small">
+    <span>&copy; {{ today | year }} En Route Books and Media, LLC. Member, Association of Catholic Publishers.</span>
+    <span><a href="/admin/">Sign in</a> · Site by <a href="https://lickitysplitweb.com">Lickity Split Web Design</a></span>
+  </div>
+</footer>
+</body>
+</html>

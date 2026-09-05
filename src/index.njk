@@ -1,0 +1,94 @@
+---
+layout: base.njk
+permalink: /
+---
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">A Catholic publishing house · St. Louis · Since 2014</p>
+      <h1>Make the time.</h1>
+      <p class="lede">Nearly 700 books in theology, philosophy, spirituality, literature, poetry, and children's stories, from scholars, clergy, poets, and first-time authors. Published to be read, not warehoused.</p>
+      <div class="hero-actions"><a class="btn" href="/books/">Browse the books</a><a class="btn ghost" href="/submissions/">Submit a manuscript</a></div>
+      <form class="search-bar" action="/books/" method="get" style="margin-top:1.6rem"><input type="search" name="q" placeholder="Search by title or author" aria-label="Search books"><button class="btn brass" type="submit">Search</button></form>
+    </div>
+    <div class="shelf">
+    {%- for b in books | recent(3) %}<a href="/books/{{ b.slug }}/"><img src="{{ b.cover }}" alt="{{ b.title }}" width="400" height="600"{% if loop.first %} fetchpriority="high"{% else %} loading="lazy"{% endif %}></a>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="band-head"><h2>New this season</h2><a class="textlink" href="/books/">All {{ books.length }} titles →</a></div>
+    <div class="books">
+    {%- for b in books | recent(10) %}{% include "bookcard.njk" %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="band white">
+  <div class="wrap">
+    <div class="band-head"><h2>Browse by subject</h2></div>
+    <div class="cats">
+    {%- for c in categories %}<a href="/category/{{ c.slug }}/">{{ c.name }}<span>{{ c.count }}</span></a>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="band harbor">
+  <div class="wrap two-col">
+    <div>
+      <p class="kicker" style="color:var(--brass-2)">Our model</p>
+      <h2>Mission over scale.</h2>
+      <p class="lede">En Route is a traditional publisher on a print-on-demand model. No warehouses, no large print runs, no author fees. We assume the cost of preparing a book for publication; authors earn a 10 percent royalty on retail sales and buy copies at a 40 percent discount.</p>
+      <p>That model lets us publish voices a larger house would pass over: a retired deacon's spiritual direction, a scientist's case for faith, a first novel, a book of poems. Since 2014, nearly 700 of them. Eligible paperbacks now print on groundwood paper, the richer, more tactile stock of a bookshop paperback.</p>
+      <a class="textlink" href="/about/">How we work →</a>
+    </div>
+    <div class="steps" style="grid-template-columns:1fr 1fr;border-color:rgba(255,255,255,.2)">
+      <div><h3>Submit</h3><p>A complete, professionally edited manuscript in Word, with a cover page.</p></div>
+      <div><h3>Prepare</h3><p>We design, typeset, and prepare the book for print and Kindle at our cost.</p></div>
+      <div><h3>Publish</h3><p>Paperback, often hardback, Kindle, and where it fits, Audible.</p></div>
+      <div><h3>Reach</h3><p>Distribution through Amazon and wholesale, and a seat on WCAT Radio.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap two-col">
+    <img src="/images/header.jpg" alt="Driftwood on a beach, En Route's motto: Make the time" width="1920" height="900" loading="lazy">
+    <div>
+      <p class="kicker">WCAT Radio and TV</p>
+      <h2>Over a hundred programs. Thousands of episodes.</h2>
+      <p>Since 2016 En Route's authors have had a second home on WCAT Radio, a Catholic internet radio station with more than a hundred programs and thousands of podcast episodes, and on WCAT TV. Publish with us and your book gets heard as well as read.</p>
+      <div class="hero-actions"><a class="btn" href="/radio/">About WCAT</a><a class="btn ghost" href="{{ site.wcat }}">Listen now</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="band white">
+  <div class="wrap">
+    <div class="band-head"><h2>Recognition</h2></div>
+    <div class="marks">
+      <img src="/images/acp.png" alt="Association of Catholic Publishers" style="background:var(--harbor);padding:.6rem 1rem">
+      <img class="tall" src="/images/award-stl.jpg" alt="2019 St. Louis Award, Publisher">
+      <img src="/images/award-academy.jpg" alt="American Academy of Distance Learning">
+    </div>
+    <p style="margin-top:1.5rem;color:var(--ink-2)">Member of the Association of Catholic Publishers. 2019 St. Louis Award, Publisher category. Recognized by the American Academy of Distance Learning alongside St. Augustine's Press as a house that publishes what larger presses will not.</p>
+  </div>
+</section>
+
+<section class="band paper-2">
+  <div class="wrap two-col">
+    <div>
+      <h2>Hear about new titles.</h2>
+      <p>A short note when something worth reading comes out.</p>
+    </div>
+    <form class="form" action="https://formsubmit.co/{{ site.email }}" method="POST" style="grid-template-columns:1fr 1fr">
+      <input type="hidden" name="_subject" value="Newsletter signup from the website">
+      <label>First name <input type="text" name="first"></label>
+      <label>Last name <input type="text" name="last"></label>
+      <label style="grid-column:1/-1">Email <input type="email" name="email" required></label>
+      <button class="btn brass" type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>

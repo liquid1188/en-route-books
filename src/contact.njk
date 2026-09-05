@@ -1,0 +1,19 @@
+---
+layout: base.njk
+title: Contact
+permalink: /contact/
+---
+<div class="wrap page-head"><h1>Contact</h1><p class="lede">Manuscripts, orders, rights, radio. Everything reaches Sebastian.</p></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap two-col top">
+    <form class="form" action="https://formsubmit.co/{{ site.email }}" method="POST">
+      <input type="hidden" name="_subject" value="Message from enroutebooksandmedia.com">
+      <label>Name <input type="text" name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>About <select name="topic"><option>A manuscript</option><option>A wholesale or bulk order</option><option>An existing order</option><option>WCAT Radio</option><option>Rights and permissions</option><option>Something else</option></select></label>
+      <label>Message <textarea name="message" rows="6" required></textarea></label>
+      <button class="btn" type="submit">Send</button>
+    </form>
+    <div class="facts"><dl><dt>Email</dt><dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd><dt>Phone</dt><dd>{{ site.phone }}</dd><dt>Based</dt><dd>{{ site.city }}</dd><dt>Radio</dt><dd><a href="{{ site.wcat }}">wcatradio.com</a></dd></dl></div>
+  </div>
+</section>

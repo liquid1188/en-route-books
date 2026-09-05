@@ -1,0 +1,11 @@
+---
+layout: base.njk
+title: Authors
+permalink: /authors/
+---
+<div class="wrap page-head"><h1>Authors</h1><p class="lede">{{ authors.length }} authors, scholars and clergy and poets and first-timers, in one alphabet.</p></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap authors">
+  {%- for a in authors %}<a href="/authors/{{ a.slug }}/">{{ a.name }} <span>{{ a.books.length }}</span></a>{% endfor %}
+  </div>
+</section>

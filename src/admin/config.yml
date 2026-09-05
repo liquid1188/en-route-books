@@ -1,0 +1,11 @@
+backend:
+  name: github
+  repo: liquid1188/en-route-books
+  branch: main
+media_folder: src/images
+public_folder: /images
+collections:
+  - name: site
+    label: Site
+    files:
+      - { name: site, label: Settings, file: src/_data/site.json, fields: [ { name: email, label: Email }, { name: phone, label: Phone }, { name: titles, label: Title count phrase } ] }
