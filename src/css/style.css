@@ -238,9 +238,9 @@ table.rates td:last-child { text-align: right; font-weight: 600; }
 .site-foot.v2 .util a.totop { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 0; }
 .site-foot.v2 .util a.totop svg { width: 16px; height: 16px; display: block; }
 .collection-banner { width: 100%; display: block; box-shadow: 0 16px 40px -24px rgba(0,0,0,.5); }
-.collections { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; }
+.collections { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; align-items: start; }
 .collection { display: block; text-decoration: none; color: inherit; background: var(--paper); border: 1px solid var(--rule); }
-.collection img { width: 100%; display: block; aspect-ratio: 5 / 2; object-fit: cover; }
+.collection img { width: 100%; height: auto; display: block; }
 .collection span { display: block; padding: 1rem 1.2rem 1.1rem; }
 .collection strong { display: block; font-family: var(--display); font-size: 1.3rem; line-height: 1.25; margin-bottom: .3rem; }
 .collection em { display: block; font-style: normal; font-size: .9rem; color: var(--ink-2); }
