@@ -33,38 +33,28 @@
   </div>
 </header>
 <main id="main">{{ content | safe }}</main>
-<footer class="site-foot">
-  <div class="wrap foot-grid">
-    <div>
-      <img class="foot-crest" src="/images/crest-white.png" alt="" width="512" height="637" loading="lazy">
-      <p class="foot-brand">En Route Books and Media</p>
+<footer class="site-foot v2">
+  <div class="wrap foot-top">
+    <div class="fbrand">
+      <img class="fmark" src="/images/crest-white.png" alt="" width="512" height="637" loading="lazy"><p class="foot-brand">En Route Books and Media</p>
       <p class="foot-motto">Make the time.</p>
       <p class="foot-tag">A Catholic publishing house in St. Louis, Missouri, founded in 2014 by Dr. Ronda Chervin and Dr. Sebastian Mahfood, OP.</p>
+      <div class="foot-ctas"><a class="btn" href="/submissions/">Submit a manuscript</a><a class="btn ghost" href="/wholesale/">Wholesale orders</a></div>
     </div>
-    <div>
-      <h3>Read</h3>
-      <a href="/books/">All books</a>
-      <a href="/authors/">Authors</a>
-      <a href="/free/">Free downloads</a>
-      <a href="/radio/">WCAT Radio and TV</a>
-    </div>
-    <div>
-      <h3>Work with us</h3>
-      <a href="/submissions/">Submit a manuscript</a>
-      <a href="/wholesale/">Wholesale and bulk orders</a>
-      <a href="/about/">About En Route</a>
-      <a href="/contact/">Contact</a>
-    </div>
-    <div>
+    <div class="fcol"><h3>Read</h3><a href="/books/">All books</a><a href="/authors/">Authors</a><a href="/free/">Free downloads</a><a href="/radio/">WCAT Radio and TV</a></div><div class="fcol"><h3>The house</h3><a href="/about/">About En Route</a><a href="/submissions/">Submissions</a><a href="/wholesale/">Wholesale and bulk orders</a><a href="/contact/">Contact</a></div>
+    <div class="fcol fcontact">
       <h3>Contact</h3>
-      <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-      <a href="tel:3147061009">{{ site.phone }}</a>
-      <span class="foot-tag">{{ site.city }}</span>
+      <a class="crow" href="mailto:{{ site.email }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M3 6h18v12H3z"/><path fill="none" stroke="currentColor" stroke-width="1.7" d="m3 7 9 6 9-6"/></svg><span>{{ site.email }}</span></a><a class="crow" href="tel:3147061009"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M6 3h4l2 5-2.5 1.5a11 11 0 0 0 5 5L16 12l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 4 5a2 2 0 0 1 2-2z"/></svg><span>{{ site.phone }}</span></a><span class="crow"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/></svg><span>{{ site.city }}</span></span>
+      <div class="socials"><a class="soc" href="{{ site.wcattv }}" aria-label="WCAT TV on YouTube" title="WCAT TV on YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.7" d="M3 8.5C3 6.6 4.5 5 6.4 5h11.2C19.5 5 21 6.6 21 8.5v7c0 1.9-1.5 3.5-3.4 3.5H6.4C4.5 19 3 17.4 3 15.5z"/><path fill="currentColor" d="m10 9 5 3-5 3z"/></svg></a></div>
     </div>
   </div>
-  <div class="wrap foot-small">
-    <span>&copy; {{ today | year }} En Route Books and Media, LLC. Member, Association of Catholic Publishers.</span>
-    <span><a href="/admin/">Sign in</a> · Site by <a href="https://lickitysplitweb.com">Lickity Split Web Design</a></span>
+  <div class="wrap foot-news">
+    <div><p class="foot-brand">Hear about new titles.</p><p class="foot-tag">A short note when something worth reading comes out.</p></div>
+    <form class="news-form" action="https://enroutebooksandmedia.us17.list-manage.com/subscribe/post?u=d20c088b919959327cd23b128&amp;id=91e11833c4&amp;f_id=005edfe3f0" method="post" target="_blank"><label class="sr" for="mc-email">Email</label><input id="mc-email" type="email" name="EMAIL" placeholder="you@example.com" required><input type="text" name="b_d20c088b919959327cd23b128_91e11833c4" tabindex="-1" value="" style="position:absolute;left:-5000px" aria-hidden="true"><button class="btn" type="submit">Subscribe</button></form>
+  </div>
+  <div class="wrap foot-bottom">
+    <span class="copy">&copy; {{ today | year }} En Route Books and Media, LLC. Member, Association of Catholic Publishers.</span>
+    <span class="util"><a href="/admin/">Sign in</a><a href="https://lickitysplitweb.com">Site by Lickity Split Web Design</a><a class="totop" href="#main" aria-label="Back to top"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" d="m6 14 6-6 6 6"/></svg></a></span>
   </div>
 </footer>
 </body>
