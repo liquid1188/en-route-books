@@ -12,7 +12,7 @@ permalink: /
       <form class="search-bar" action="/books/" method="get" style="margin-top:1.6rem"><input type="search" name="q" placeholder="Search by title or author" aria-label="Search books"><button class="btn brass" type="submit">Search</button></form>
     </div>
     <div class="shelf">
-    {%- for b in books | recent(3) %}<a href="/books/{{ b.slug }}/"><img src="{{ b.cover }}" alt="{{ b.title }}" width="400" height="600"{% if loop.first %} fetchpriority="high"{% else %} loading="lazy"{% endif %}></a>{% endfor %}
+    {%- for b in books | recent(3) %}<a href="/books/{{ b.slug }}/"><img src="{{ b.cover }}" alt="{{ b.title }}" onerror="this.onerror=null;this.src='/images/cover-coming-soon.jpg'" width="400" height="600"{% if loop.first %} fetchpriority="high"{% else %} loading="lazy"{% endif %}></a>{% endfor %}
     </div>
   </div>
 </section>
@@ -31,7 +31,7 @@ permalink: /
     <div class="band-head"><h2>Award winners</h2><a class="textlink" href="/awards/">All awards →</a></div>
     <div class="award-row">
     {%- for a in featured.awards.slice(0, 6) %}{% for b in books %}{% if b.slug == a.slug %}
-      <a class="award-card" href="/books/{{ b.slug }}/"><img src="{{ b.cover }}" alt="" loading="lazy" width="400" height="600"><span><strong>{{ b.title }}</strong><em>{{ a.award }}</em></span></a>
+      <a class="award-card" href="/books/{{ b.slug }}/"><img src="{{ b.cover }}" alt="" onerror="this.onerror=null;this.src='/images/cover-coming-soon.jpg'" loading="lazy" width="400" height="600"><span><strong>{{ b.title }}</strong><em>{{ a.award }}</em></span></a>
     {%- endif %}{% endfor %}{% endfor %}
     </div>
   </div>

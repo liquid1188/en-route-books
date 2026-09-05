@@ -8,7 +8,7 @@ description: "En Route books recognized by the Catholic Media Association, the C
 <section class="band" style="padding-top:1.5rem">
   <div class="wrap award-list">
   {%- for a in featured.awards %}{% for b in books %}{% if b.slug == a.slug %}
-    <a class="award-card" href="/books/{{ b.slug }}/"><img src="{{ b.cover }}" alt="" loading="lazy" width="400" height="600"><span><strong>{{ b.title }}</strong>{% if b.author %}<small>{{ b.author }}</small>{% endif %}<em>{{ a.award }}</em></span></a>
+    <a class="award-card" href="/books/{{ b.slug }}/"><img src="{{ b.cover }}" alt="" onerror="this.onerror=null;this.src='/images/cover-coming-soon.jpg'" loading="lazy" width="400" height="600"><span><strong>{{ b.title }}</strong>{% if b.author %}<small>{{ b.author }}</small>{% endif %}<em>{{ a.award }}</em></span></a>
   {%- endif %}{% endfor %}{% endfor %}
   </div>
 </section>

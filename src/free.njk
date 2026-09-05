@@ -8,7 +8,7 @@ permalink: /free/
   <div class="wrap">
     <div class="books">
     {%- for b in books %}{% for f in b.formats %}{% if f.label == "Free PDF" %}
-      <a class="book" href="{{ f.url }}"><span class="cover-wrap"><img src="{{ b.cover }}" alt="" loading="lazy" width="400" height="600"><span class="ribbon free">Free PDF</span></span><h3>{{ b.title }}</h3>{% if b.author %}<p>{{ b.author }}</p>{% endif %}</a>
+      <a class="book" href="{{ f.url }}"><span class="cover-wrap"><img src="{{ b.cover }}" alt="" onerror="this.onerror=null;this.src='/images/cover-coming-soon.jpg'" loading="lazy" width="400" height="600"><span class="ribbon free">Free PDF</span></span><h3>{{ b.title }}</h3>{% if b.author %}<p>{{ b.author }}</p>{% endif %}</a>
     {%- endif %}{% endfor %}{% endfor %}
     </div>
     <p class="caption" style="margin-top:1.5rem;color:var(--ink-2)">Audio downloads and the <a href="{{ site.url }}/virtual-divine-mercy-chaplet/">Virtual Divine Mercy Chaplet</a> are on the current site.</p>
