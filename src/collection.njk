@@ -1,0 +1,24 @@
+---
+layout: base.njk
+pagination:
+  data: authorsets.collections
+  size: 1
+  alias: col
+permalink: "/collections/{{ col.slug }}/"
+eleventyComputed:
+  title: "{{ col.name }}"
+  description: "{{ col.tagline }}"
+---
+<div class="wrap page-head"><p class="kicker"><a href="/books/" style="text-decoration:none;color:inherit">Books</a> · Author collection</p><h1>{{ col.name }}</h1><p class="lede">{{ col.tagline }}</p></div>
+<section class="band" style="padding-top:1.5rem">
+  <div class="wrap">
+    <img class="collection-banner" src="{{ col.banner }}" alt="{{ col.name }}" loading="eager">
+    <div class="two-col top" style="margin-top:2.5rem">
+      <div class="prose">{% for p in col.intro %}<p>{{ p }}</p>{% endfor %}</div>
+      <div>
+        <h2 style="font-size:1.4rem;margin-bottom:1rem">The books</h2>
+        <div class="books">{% for b in books %}{% if col.match in (b.author | lower) %}{% include "bookcard.njk" %}{% endif %}{% endfor %}</div>
+      </div>
+    </div>
+  </div>
+</section>

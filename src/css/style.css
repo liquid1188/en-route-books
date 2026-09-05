@@ -237,3 +237,14 @@ table.rates td:last-child { text-align: right; font-weight: 600; }
 .author-bio h2 { font-size: 1.4rem; }
 .site-foot.v2 .util a.totop { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 0; }
 .site-foot.v2 .util a.totop svg { width: 16px; height: 16px; display: block; }
+.collection-banner { width: 100%; display: block; box-shadow: 0 16px 40px -24px rgba(0,0,0,.5); }
+.collections { display: grid; grid-template-columns: 1fr 1fr; gap: 1.6rem; }
+.collection { display: block; text-decoration: none; color: inherit; background: var(--paper); border: 1px solid var(--rule); }
+.collection img { width: 100%; display: block; aspect-ratio: 5 / 2; object-fit: cover; }
+.collection span { display: block; padding: 1rem 1.2rem 1.1rem; }
+.collection strong { display: block; font-family: var(--display); font-size: 1.3rem; line-height: 1.25; margin-bottom: .3rem; }
+.collection em { display: block; font-style: normal; font-size: .9rem; color: var(--ink-2); }
+.collection.text { display: flex; align-items: center; min-height: 120px; }
+.collection:hover strong { color: var(--harbor-2); text-decoration: underline; }
+.pull { font-family: var(--display); font-size: 1.15rem; line-height: 1.5; margin: .5rem 0 0; padding-left: 1.2rem; border-left: 3px solid var(--brass-2); }
+@media (max-width: 800px) { .collections { grid-template-columns: 1fr; } }

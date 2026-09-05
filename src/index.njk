@@ -37,6 +37,45 @@ permalink: /
   </div>
 </section>
 
+<section class="band paper-2">
+  <div class="wrap two-col">
+    <img src="/images/home-PC-Enroute-Advertising-Book-Framed.jpg" alt="Mater Ecclesiae: Mother of the Church, by Joseph P. Michael" width="918" height="1257" loading="lazy" style="max-width:360px;justify-self:center">
+    <div>
+      <p class="kicker">Introducing</p>
+      <h2>Mater Ecclesiae: Mother of the Church</h2>
+      <p class="lede">By Joseph P. Michael. The first volume of Apologia Pro Sancta Maria, on Mary as Mother of Fair Love and Mother of the Church.</p>
+      <a class="btn" href="/books/motherofthechurch/">See the book</a>
+    </div>
+  </div>
+</section>
+
+<section class="band white">
+  <div class="wrap">
+    <div class="band-head"><h2>Author collections</h2></div>
+    <div class="collections">
+    {%- for c in authorsets.collections %}
+      <a class="collection" href="/collections/{{ c.slug }}/"><img src="{{ c.banner }}" alt="{{ c.name }}" loading="lazy"><span><strong>{{ c.name }}</strong><em>{{ c.tagline }}</em></span></a>
+    {%- endfor %}
+      <a class="collection text" href="/category/deacon-james-keating-collection/"><span><strong>Deacon James Keating Collection</strong><em>Five books on the spiritual life and priestly formation.</em></span></a>
+      <a class="collection text" href="/category/dianne-ahern-collection/"><span><strong>Dianne Ahern Collection</strong><em>Nine books for children on the sacraments and the saints.</em></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap two-col top">
+    <div>
+      <p class="kicker">News</p>
+      <h2>En Route, now on groundwood.</h2>
+      <p>En Route is now offering groundwood paper for its eligible paperback titles, especially novels and other text-heavy works. Beyond its environmental benefits, groundwood offers a richer, more tactile reading experience: higher opacity, less glare, and the textured feel readers associate with classic trade paperbacks. The pages turn more easily and the book reads warmer. Groundwood books generate at least 15 percent fewer carbon emissions than standard paper while keeping excellent readability and print quality. Titles with heavy ink coverage will continue to use cream or white paper where needed.</p>
+    </div>
+    <div class="prose">
+      <p class="kicker">From the American Academy of Distance Learning</p>
+      <blockquote class="pull">"Two contemporary examples are St. Augustine's Press founded by Bruce Fingerhut, and En Route Books founded by Sebastian Mahfood and Ronda Chervin... these two individuals are the lone defenders of the civilization, culture and philosophical and theological truths of 'the West.'"</blockquote>
+    </div>
+  </div>
+</section>
+
 <section class="band">
   <div class="wrap">
     <div class="band-head"><h2>New this season</h2><a class="textlink" href="/books/">All {{ books.length }} titles →</a></div>
