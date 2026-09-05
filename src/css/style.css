@@ -164,3 +164,5 @@ table.rates td:last-child { text-align: right; font-weight: 600; }
 .crumbs a { text-decoration: none; color: inherit; }
 .crumbs a:hover { text-decoration: underline; }
 .band.ivory-2 { background: var(--paper-2); }
+.formats { display: grid; gap: .5rem; }
+.formats .btn { text-align: center; }
