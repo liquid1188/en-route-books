@@ -159,8 +159,8 @@ table.rates td:last-child { text-align: right; font-weight: 600; }
 .az-filter { width: 100%; max-width: 420px; font: inherit; padding: .8rem .9rem; border: 1px solid var(--rule); background: var(--white); margin-bottom: 2rem; }
 .az-group { margin-bottom: 2.5rem; scroll-margin-top: 90px; }
 .az-group h2 { font-size: 2rem; border-bottom: 1px solid var(--rule); padding-bottom: .4rem; margin-bottom: 1rem; }
-.recog-logo { height: 60px; width: auto; display: block; margin-bottom: 1.2rem; color: var(--harbor); }
-.recog-logo.wide { height: 60px; }
+.recog-logo { height: 72px; width: auto; display: block; margin-bottom: 1.2rem; color: var(--harbor); }
+.recog-logo.seal, .recog-logo.quote { height: 104px; margin-bottom: 1rem; }
 .crumbs a { text-decoration: none; color: inherit; }
 .crumbs a:hover { text-decoration: underline; }
 .band.ivory-2 { background: var(--paper-2); }
