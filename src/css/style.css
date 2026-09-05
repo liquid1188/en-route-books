@@ -265,3 +265,11 @@ table.rates td:last-child { text-align: right; font-weight: 600; }
 .video .play { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; font-size: 1.6rem; text-shadow: 0 2px 8px rgba(0,0,0,.6); }
 .video:hover img { opacity: 1; }
 .authors a .mini { width: 26px; height: 26px; border-radius: 50%; object-fit: cover; vertical-align: middle; margin-right: .5rem; }
+
+.founders { display: grid; gap: 2.5rem; }
+.founder { display: grid; grid-template-columns: 160px 1fr; gap: 2rem; align-items: start; }
+.founder img { width: 100%; height: auto; display: block; border: 1px solid var(--rule); }
+.founder h3 { font-size: 1.5rem; margin: 0 0 .2rem; }
+.founder .kicker { margin: 0 0 .8rem; }
+.founder p { margin: 0 0 1rem; }
+@media (max-width: 640px) { .founder { grid-template-columns: 110px 1fr; gap: 1.2rem; } }
