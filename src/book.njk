@@ -17,9 +17,8 @@ eleventyComputed:
       <img class="cover" src="{{ b.cover }}" alt="Cover of {{ b.title }}" width="400" height="600">
       <div class="buy">
         {% if b.price %}<p>{{ b.price }}</p>{% endif %}
-        {% for u in b.buy %}<a class="btn" href="{{ u }}">{% if 'amazon' in u or 'amzn' in u %}Buy on Amazon{% else %}Buy{% endif %}</a>{% endfor %}
-        <a class="btn ghost" href="{{ b.url }}">Order from En Route</a>
-        <p style="margin:.8rem 0 0;font-size:.88rem;color:var(--ink-2)">Bookstores, parishes, and groups: <a href="/wholesale/">wholesale pricing</a>.</p>
+        {% if b.amazon %}<a class="btn" href="{{ b.amazon }}">Buy on Amazon</a>{% else %}<a class="btn ghost" href="{{ b.url }}">View on En Route</a>{% endif %}
+        <p style="margin:.8rem 0 0;font-size:.88rem;color:var(--ink-2)">Bookstores, parishes, and groups: <a href="/wholesale/">bulk orders direct from En Route</a>.</p>
       </div>
     </div>
     <div>
@@ -27,7 +26,8 @@ eleventyComputed:
       <h1>{{ b.title }}</h1>
       {% if b.author %}<p class="byline">by <a href="/authors/{{ b.authorSlug }}/">{{ b.author }}</a></p>{% endif %}
       <div class="prose">{% for p in b.desc %}<p>{{ p }}</p>{% endfor %}</div>
-      {% if b.quotes.length %}<div class="endorse"><h3>Praise</h3>{% for qq in b.quotes %}<blockquote>{{ qq }}</blockquote>{% endfor %}</div>{% endif %}
+      {% if b.about %}<div class="endorse"><h3>About the author</h3>{% for p in b.about %}<p>{{ p }}</p>{% endfor %}</div>{% endif %}
+      {% if b.praise.length %}<div class="endorse"><h3>Praise</h3>{% for p in b.praise %}<blockquote><p>{{ p.q }}</p>{% if p.by %}<cite>{{ p.by }}</cite>{% endif %}</blockquote>{% endfor %}</div>{% endif %}
     </div>
   </div>
 </section>

@@ -94,7 +94,9 @@ p { margin: 0 0 1.1em; max-width: 66ch; }
 .prose { max-width: 66ch; }
 .prose p { font-size: 1.1rem; }
 .endorse { margin: 2rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
-.endorse blockquote { margin: 0 0 1.4rem; font-family: var(--display); font-size: 1.2rem; line-height: 1.4; }
+.endorse blockquote { margin: 0 0 1.8rem; padding-left: 1.2rem; border-left: 3px solid var(--brass-2); }
+.endorse blockquote p { font-family: var(--display); font-size: 1.2rem; line-height: 1.45; margin: 0 0 .5rem; }
+.endorse cite { display: block; font-style: normal; font-size: .9rem; color: var(--ink-2); line-height: 1.4; }
 @media (max-width: 860px) { .book-page { grid-template-columns: 1fr; gap: 2rem; } .book-page .side { position: static; max-width: 300px; } }
 /* authors */
 .authors { columns: 3; column-gap: 2rem; }
@@ -119,7 +121,7 @@ table.rates td:last-child { text-align: right; font-weight: 600; }
 .form label { display: grid; gap: .3rem; font-weight: 500; font-size: .95rem; }
 .form input, .form textarea, .form select { min-width: 0; width: 100%; font: inherit; padding: .8rem .9rem; border: 1px solid var(--rule); background: #fff; }
 .form button { font: inherit; justify-self: start; cursor: pointer; }
-.page-head { padding: clamp(2rem, 4vw, 3rem) 0 0; }
+.page-head { padding-top: clamp(2rem, 4vw, 3rem); padding-bottom: 0; }
 .page-head h1 { margin-bottom: .4rem; }
 .page-head .lede { margin: 0; }
 .page-head + .band { padding-top: 1.75rem !important; }
@@ -129,9 +131,10 @@ table.rates td:last-child { text-align: right; font-weight: 600; }
 .facts dd { margin: 0; }
 /* footer */
 .site-foot { background: var(--harbor); color: rgba(255,255,255,.85); padding: 3.5rem 0 2rem; }
-.foot-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 2rem; }
+.foot-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.3fr; gap: 3rem; }
 .foot-brand { font-family: var(--display); font-size: 1.5rem; color: #fff; margin: 0 0 .4rem; }
-.foot-tag { font-size: .95rem; max-width: 34ch; display: block; }
+.foot-tag { font-size: .95rem; max-width: 40ch; display: block; line-height: 1.55; }
+.foot-motto { font-family: var(--display); font-style: italic; font-size: 1.35rem; color: var(--brass-2); margin: 0 0 .8rem; }
 .site-foot h3 { color: #fff; font-size: 1.05rem; margin-bottom: .6rem; }
 .site-foot a { display: block; color: rgba(255,255,255,.8); text-decoration: none; padding: .2rem 0; }
 .site-foot a:hover { color: var(--brass-2); }
@@ -139,3 +142,8 @@ table.rates td:last-child { text-align: right; font-weight: 600; }
 .foot-small a { display: inline; }
 @media (max-width: 860px) { .foot-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 520px) { .foot-grid { grid-template-columns: 1fr; } }
+.recog-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; border-top: 1px solid var(--rule); padding-top: 2rem; }
+.recog-cards h3 { font-size: 1.35rem; margin: 0 0 .4rem; }
+.recog-cards p { margin: 0; font-size: .98rem; color: var(--ink-2); }
+.recog-cards .kicker { margin-bottom: .6rem; }
+@media (max-width: 800px) { .recog-cards { grid-template-columns: 1fr; } }
