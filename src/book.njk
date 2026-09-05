@@ -16,7 +16,7 @@ eleventyComputed:
     <div class="side">
       <img class="cover" src="{{ b.cover }}" alt="Cover of {{ b.title }}" width="400" height="600">
       <div class="buy">
-        {% if b.price %}<p>{{ b.price }}</p>{% endif %}
+        {% if b.price and "TBA" not in b.price %}<p>{{ b.price }}</p>{% endif %}
         {% if b.amazon %}<a class="btn" href="{{ b.amazon }}">Buy on Amazon</a>{% else %}<a class="btn ghost" href="{{ b.url }}">View on En Route</a>{% endif %}
         <p style="margin:.8rem 0 0;font-size:.88rem;color:var(--ink-2)">Bookstores, parishes, and groups: <a href="/wholesale/">bulk orders direct from En Route</a>.</p>
       </div>
