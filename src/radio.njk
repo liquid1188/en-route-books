@@ -2,14 +2,62 @@
 layout: base.njk
 title: WCAT Radio and TV
 permalink: /radio/
+description: "WCAT Radio, En Route's broadcast partner: more than eighty Catholic programs, the shows Sebastian Mahfood hosts, and a full directory of programs and courses."
 ---
-<div class="wrap page-head"><h1>WCAT Radio and TV</h1><p class="lede">En Route's broadcast partner since 2016: a Catholic internet radio station with more than a hundred programs and thousands of podcast episodes, and a YouTube channel.</p></div>
+<div class="wrap page-head"><h1>WCAT Radio and TV</h1><p class="lede">{{ wcat.intro }}</p></div>
 <section class="band" style="padding-top:1.5rem">
   <div class="wrap two-col">
     <div class="prose">
-      <p>WCAT Radio grew up alongside the publishing house. Authors come on to talk about their books; regular hosts run programs on theology, apologetics, family life, and the spiritual journey; and the archive of episodes is one of the largest Catholic podcast libraries anywhere. Publishing with En Route puts you in that conversation.</p>
+      <p>WCAT Radio grew up alongside the publishing house. Co-founded in 2016 by Sebastian Mahfood, Ronda Chervin, and the late Bob Olson, it holds affiliate status with the Association of Theological Schools and is produced from St. Louis. Every program below is free to stream, and most run as podcasts wherever you listen.</p>
       <div class="hero-actions"><a class="btn" href="{{ site.wcat }}">Listen at wcatradio.com</a><a class="btn ghost" href="{{ site.wcattv }}">WCAT TV on YouTube</a></div>
     </div>
     <img src="/images/header.jpg" alt="" loading="lazy">
+  </div>
+</section>
+
+<section class="band white">
+  <div class="wrap">
+    <div class="band-head"><h2>Hosted by Sebastian Mahfood</h2><p class="band-note">The programs En Route's president hosts or convenes.</p></div>
+    <div class="shows featured">
+    {%- for s in wcat.shows %}{% if s.sebastian %}
+      <a class="show" href="{{ s.url }}">
+        <strong>{{ s.title }}</strong>
+        <span class="host">{{ s.host }}</span>
+        <p>{{ s.desc }}</p>
+      </a>
+    {%- endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="band paper-2">
+  <div class="wrap">
+    <div class="band-head"><h2>Start here</h2><p class="band-note">Ten programs that show what the station does best.</p></div>
+    <div class="shows featured">
+    {%- for s in wcat.shows %}{% if s.featured %}
+      <a class="show" href="{{ s.url }}">
+        <strong>{{ s.title }}</strong>
+        <span class="host">{{ s.host }}</span>
+        <p>{{ s.desc }}</p>
+      </a>
+    {%- endif %}{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="band white">
+  <div class="wrap">
+    <div class="band-head"><h2>All programs</h2><p class="band-note">Every program, A to Z. Each opens on wcatradio.com.</p></div>
+    <ul class="showlist">
+    {%- for s in wcat.shows %}{% if s.kind == "program" %}
+      <li><a href="{{ s.url }}"><strong>{{ s.title }}</strong>{% if s.host %}<span>{{ s.host }}</span>{% endif %}</a></li>
+    {%- endif %}{% endfor %}
+    </ul>
+    <div class="band-head" style="margin-top:3rem"><h2>Courses and webinars</h2></div>
+    <ul class="showlist">
+    {%- for s in wcat.shows %}{% if s.kind == "course" %}
+      <li><a href="{{ s.url }}"><strong>{{ s.title }}</strong>{% if s.host %}<span>{{ s.host }}</span>{% endif %}</a></li>
+    {%- endif %}{% endfor %}
+    </ul>
   </div>
 </section>

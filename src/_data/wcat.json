@@ -1,0 +1,845 @@
+{
+ "intro": "En Route's broadcast partner since 2016: a Catholic internet radio station with more than eighty programs and thousands of podcast episodes, and WCAT TV on YouTube. Authors come on to talk about their books; regular hosts run programs on theology, apologetics, family life, and the spiritual journey; and everything stays in the archive.",
+ "shows": [
+  {
+   "title": "Addiction and the Family – A National Association for Children of Addiction Massive Open Online Course",
+   "path": "/family/",
+   "url": "https://wcatradio.com/family/",
+   "desc": "Addiction and the Family, An On-Demand Course Addiction and the Family: A Seminary Curriculum Building on the success of the fall 2014 course offering Addiction and the Family mentioned in this…",
+   "kind": "course",
+   "host": "",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "The Armor of Faith",
+   "path": "/armoroffaith/",
+   "url": "https://wcatradio.com/armoroffaith/",
+   "desc": "After wandering in the emptiness of sin, Doug now looks to the One who offers a better way.",
+   "kind": "program",
+   "host": "Doug Bonebrake",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Assessing Contemporary Science in the Light of Faith",
+   "path": "/assessingscience/",
+   "url": "https://wcatradio.com/assessingscience/",
+   "desc": "Assessing Contemporary Science in the Light of…",
+   "kind": "course",
+   "host": "",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Author to Author with Dr. Cynthia Toolin-Wilson",
+   "path": "/authortoauthor/",
+   "url": "https://wcatradio.com/authortoauthor/",
+   "desc": "“Author to Author” with Dr. Cynthia Toolin-Wilson is a one-hour weekly interview show.",
+   "kind": "program",
+   "host": "Dr. Cynthia Toolin-Wilson",
+   "featured": true,
+   "sebastian": false
+  },
+  {
+   "title": "Avoiding Bitterness in Suffering by Ronda Chervin",
+   "path": "/avoidingbitternessinsuffering/",
+   "url": "https://wcatradio.com/avoidingbitternessinsuffering/",
+   "desc": "Ronda Chervin, PhD, is a professor of philosophy, widow, grandmother, and great grandmother.",
+   "kind": "program",
+   "host": "Dr. Ronda Chervin",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Bereavement Miracles: A Program of Unity and Hope",
+   "path": "/bereavementmiracles/",
+   "url": "https://wcatradio.com/bereavementmiracles/",
+   "desc": "Michael Frey is a graduate of the Master of Arts in Pastoral Studies program at Holy Apostles College and Seminary in Cromwell, CT.",
+   "kind": "program",
+   "host": "Michael Frey",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Bible, Love Letters From Your Father, Books of John with Romuald B. Simeone",
+   "path": "/biblelovelettersfromyourfather/",
+   "url": "https://wcatradio.com/biblelovelettersfromyourfather/",
+   "desc": "Catechist Romuald B. Simeone at St. Michael’s Mission, Batu Arang, Malaysia (where taken hostage) In a captivating fashion, you will find he elucidates, chapter by chapter, Jesus’ words for the…",
+   "kind": "program",
+   "host": "Romuald B. Simeone",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Bible, Love Letters from Your Father, Letters of John",
+   "path": "/lettersofjohn/",
+   "url": "https://wcatradio.com/lettersofjohn/",
+   "desc": "Catechist Romuald B. Simeone at St. Michael’s Mission, Batu Arang, Malaysia (where taken hostage) In a captivating fashion, you will find he elucidates, chapter by chapter, Jesus’ words for the…",
+   "kind": "program",
+   "host": "Romuald B. Simeone",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Book of Revelation",
+   "path": "/bookofrevelation/",
+   "url": "https://wcatradio.com/bookofrevelation/",
+   "desc": "Catechist Romuald B. Simeone at St. Michael’s Mission, Batu Arang, Malaysia (where taken hostage) In a captivating fashion, you will find he elucidates, chapter by chapter, Jesus’ words for the…",
+   "kind": "program",
+   "host": "Romuald B. Simeone",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Brave New Us by Samantha Stephenson",
+   "path": "/brave-new-us/",
+   "url": "https://wcatradio.com/brave-new-us/",
+   "desc": "I’m a Catholic writer exploring what it means to remain fully human in an age that increasingly treats humanity as something to optimize, redesign, or escape.",
+   "kind": "program",
+   "host": "Samantha Stephenson",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "A Brighter Day with Fr. Andrew",
+   "path": "/brighterday/",
+   "url": "https://wcatradio.com/brighterday/",
+   "desc": "Isaiah 9:2, “The people who walked in darkness have seen a great light; those who dwelt in a land of deep darkness, on them has light shone.” “A Brighter Day with Fr.",
+   "kind": "program",
+   "host": "Fr. Andrew Mlele Mtaki",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "By His Wounds We Are Healed",
+   "path": "/byhiswoundswearehealed/",
+   "url": "https://wcatradio.com/byhiswoundswearehealed/",
+   "desc": "The title for this series of reflections is based on the words of the prophet Isaiah [53:5] promising the healing of Israel; words which Peter echoed, referring to Christ, in his first letter, “By…",
+   "kind": "program",
+   "host": "Rev. Joseph Charles Henchey, CSS, with Lisa Fortini-Campbell, Ph.D.",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Canon Law with Msgr. James Ramacciotti",
+   "path": "/canonlaw/",
+   "url": "https://wcatradio.com/canonlaw/",
+   "desc": "Msgr. James Ramacciotti, a priest of the Archdiocese of St. Louis, explains Canon Law in three sets of lectures concerning General Norms, Procedural Law and Juridic Structures.",
+   "kind": "program",
+   "host": "Msgr. James Ramacciotti",
+   "featured": true,
+   "sebastian": false
+  },
+  {
+   "title": "The Catholic Bookworm",
+   "path": "/thecatholicbookworm/",
+   "url": "https://wcatradio.com/thecatholicbookworm/",
+   "desc": "The Catholic Bookworm is hosted by Catholic convert Kiki Latimer to help promote good Catholic books, the authors, the Catholic culture of life, goodness, truth, and beauty, and the truths of the Catholic Faith.",
+   "kind": "program",
+   "host": "Kiki Latimer",
+   "featured": true,
+   "sebastian": false
+  },
+  {
+   "title": "Catholic Distance Learning Network",
+   "path": "/catholicdistance/",
+   "url": "https://wcatradio.com/catholicdistance/",
+   "desc": "Discover a transformative educational experience enabling you to bring the richness of Catholic teachings directly to your students’ homes.",
+   "kind": "course",
+   "host": "Dr. Mary Beckmann, BA, Western Illinois University, 1999; MAT, Webster University, 2001; EdD, Walden University, 2008″",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Catholic Legacy Radio",
+   "path": "/catholiclegacyradio/",
+   "url": "https://wcatradio.com/catholiclegacyradio/",
+   "desc": "Dominick Pepito, the host of Air of Christ Radio, runs an industry-wide national networking company called The Catholic Legacy, which works with digital marketing and advertising applications.",
+   "kind": "program",
+   "host": "Dominick Pepito",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "The Catholic Mama",
+   "path": "/catholicmama/",
+   "url": "https://wcatradio.com/catholicmama/",
+   "desc": "Visit Christine Mooney-Flynn’s The Catholic Mama to learn more about her apostolate.",
+   "kind": "program",
+   "host": "Christine Mooney-Flynn",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Catholic Mysticism",
+   "path": "/catholicmysticism/",
+   "url": "https://wcatradio.com/catholicmysticism/",
+   "desc": "Al Bielawski is en air with WCAT Radio and En…",
+   "kind": "program",
+   "host": "Al Bielawski",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Catholic Novelist Webinar",
+   "path": "/catholicnovelists/",
+   "url": "https://wcatradio.com/catholicnovelists/",
+   "desc": "Rick Akins, Ben Bongers, Danny Fitzpatrick, Lucy Underwood-Healy, and Jim Papandrea on the Catholic novel as a link between the material and spiritual worlds.",
+   "kind": "course",
+   "host": "Moderated by Sebastian Mahfood",
+   "sebastian": true,
+   "featured": false
+  },
+  {
+   "title": "Catholic Seasons",
+   "path": "/catholicseasons/",
+   "url": "https://wcatradio.com/catholicseasons/",
+   "desc": "Catholic seasons is a show with engaging speakers spreading the joy of our various seasons from Advent through Easter.",
+   "kind": "program",
+   "host": "",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Christian Democracy",
+   "path": "/christiandemocracy/",
+   "url": "https://wcatradio.com/christiandemocracy/",
+   "desc": "Jack Quirk, a Catholic, is a lawyer, currently living in Illinois, and has practiced law in both Michigan and California.",
+   "kind": "program",
+   "host": "Jack Quirk",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Cry Oneness",
+   "path": "/cryoneness/",
+   "url": "https://wcatradio.com/cryoneness/",
+   "desc": "A Catholic Evangelist Calls out to the…",
+   "kind": "program",
+   "host": "Joe Avalos",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Destination: Sainthood",
+   "path": "/destinationsainthood/",
+   "url": "https://wcatradio.com/destinationsainthood/",
+   "desc": "Program Description: It’s the task you were born for: “Become a saint, and do so quickly,” urged Pope Saint John Paul II.",
+   "kind": "program",
+   "host": "Annabelle Moseley",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Discovering Sacred Christian Art",
+   "path": "/discoveringchristianart/",
+   "url": "https://wcatradio.com/discoveringchristianart/",
+   "desc": "Dr. Michela Ferri, a Catholic Italian professor of philosophy, walks through the great works of sacred Christian art, one painting at a time.",
+   "kind": "program",
+   "host": "Dr. Michela Ferri",
+   "featured": true,
+   "sebastian": false
+  },
+  {
+   "title": "Duc in Altum",
+   "path": "/ducinaltum/",
+   "url": "https://wcatradio.com/ducinaltum/",
+   "desc": "Program Description: Luke’s Gospel tells the story of the fisherman, Simon Peter, who had fished all night in familiar waters, but had caught nothing.",
+   "kind": "program",
+   "host": "Rev. Joseph Charles Henchey with Lisa Fortini-Campbell, Ph.D.",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "The Examined Life with Phil Kallberg",
+   "path": "/theexaminedlife/",
+   "url": "https://wcatradio.com/theexaminedlife/",
+   "desc": "A proud follower of Christ, Phil Kallberg has an MA in Philosophy from Holy Apostles College and Seminary where he wrote a thesis on the Modal Ontological Argument for God’s existence.",
+   "kind": "program",
+   "host": "Phil Kallberg",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "The Extraordinary Catholic",
+   "path": "/extraordinarycatholic/",
+   "url": "https://wcatradio.com/extraordinarycatholic/",
+   "desc": "Mr. Indelicato is founder of Caritas Consulting and has been involved in the financial services industry for the past 43 years, holding regional leadership positions at several national firms.",
+   "kind": "program",
+   "host": "Joe Indelicato",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Faith and Sport",
+   "path": "/faithandsport/",
+   "url": "https://wcatradio.com/faithandsport/",
+   "desc": "Faith & Sport: Our goal is to bring an everyday sports-talk show to Catholics and Catholic-radio listeners, but with character, morality, and ethics as a regular part of the conversation.",
+   "kind": "program",
+   "host": "Dr. John Acquaviva",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Fire Away",
+   "path": "/fireaway/",
+   "url": "https://wcatradio.com/fireaway/",
+   "desc": "Carlos Bersabe is a Catholic “re-vert,” husband, father, and currently serves in the United States Air Force.",
+   "kind": "program",
+   "host": "Carlos Bersabe",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "A Fool’s Errand, an Audio Book by Matt D’Antuono",
+   "path": "/foolserrand/",
+   "url": "https://wcatradio.com/foolserrand/",
+   "desc": "What is the meaning of life? What is the nature of existence?",
+   "kind": "program",
+   "host": "Matt D’Antuono",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "From the Ambo with Fr. Dominic Ibok",
+   "path": "/fromtheambo/",
+   "url": "https://wcatradio.com/fromtheambo/",
+   "desc": "Fr Dominic shares his homilies as a source of renewing his rural parish community and a source of faith formation.",
+   "kind": "program",
+   "host": "Fr. Dominic Ibok",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "The Heart of Fiat Crucified Love",
+   "path": "/heartoffiatcrucifiedlove/",
+   "url": "https://wcatradio.com/heartoffiatcrucifiedlove/",
+   "desc": "Mary Kloska is from Elkhart, Indiana. She was raised in a huge Polish family (12 brothers and sisters) along with a lot of foster babies and other needy people in and out of the house.",
+   "kind": "program",
+   "host": "Mary Kloska",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Help Me, Ronda!",
+   "path": "/helpmeronda/",
+   "url": "https://wcatradio.com/helpmeronda/",
+   "desc": "Ronda Chervin takes listeners' questions about the spiritual life and answers them with the candor of a philosopher, widow, and grandmother.",
+   "kind": "program",
+   "host": "Ronda Chervin",
+   "featured": true,
+   "sebastian": false
+  },
+  {
+   "title": "The History of Vestments",
+   "path": "/vestments/",
+   "url": "https://wcatradio.com/vestments/",
+   "desc": "The History of Vestments About the Course Instructor Dr. Cynthia Toolin-Wilson is the Chief Academic Officer, as well as an online Professor of Dogmatic and Moral Theology, at Holy Apostles College and Seminary .",
+   "kind": "course",
+   "host": "",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Humble Faith with Sean Kelley",
+   "path": "/humblefaith/",
+   "url": "https://wcatradio.com/humblefaith/",
+   "desc": "After leaving US Army Special Operations as a Non-Commissioned Officer, Sean Kelley applied those leadership principles to automotive management, and successfully led car dealerships for over a decade.",
+   "kind": "program",
+   "host": "Humble Faith with Sean Kelley",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "I Thought You’d Like to Know",
+   "path": "/ithoughtyoudliketoknow/",
+   "url": "https://wcatradio.com/ithoughtyoudliketoknow/",
+   "desc": "WCAT's founding program, created by Bob Olson in October 2016 to interview interesting people who have a message for you. Sebastian Mahfood is among its regular hosts.",
+   "kind": "program",
+   "host": "Bob Olson, Pat Flynn, Sebastian Mahfood and others",
+   "sebastian": true,
+   "featured": false
+  },
+  {
+   "title": "I Thought You’d Like to Know This, Too",
+   "path": "/ithoughtyoudliketoknowthistoo/",
+   "url": "https://wcatradio.com/ithoughtyoudliketoknowthistoo/",
+   "desc": "Carlos Bersabe and friends interview Catholics from around the world.",
+   "kind": "program",
+   "host": "Carlos Bersabe",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "If You Know Mary, then You Know Jesus",
+   "path": "/ifyouknowmary/",
+   "url": "https://wcatradio.com/ifyouknowmary/",
+   "desc": "Bob…",
+   "kind": "program",
+   "host": "Bob Cantoni",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Inter Vitam et Mortem with Mary Anne Urlakis",
+   "path": "/ivm/",
+   "url": "https://wcatradio.com/ivm/",
+   "desc": "”Inter Vitam et Mortem” means “Between Life & Death” – Join Mary Anne Urlakis, a Catholic bioethicist, every Monday for discussion & interviews.",
+   "kind": "program",
+   "host": "Dr. Mary Anne Urlakis",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "ITEST Webinars",
+   "path": "/itest/",
+   "url": "https://wcatradio.com/itest/",
+   "desc": "The webinar series of ITEST, which Sebastian Mahfood directs: theologians and scientists on evolution, genetics, AI, the Shroud of Turin, and the complementarity of faith and science, running since November 2019.",
+   "kind": "program",
+   "host": "Institute for Theological Encounter with Science and Technology",
+   "sebastian": true,
+   "featured": false
+  },
+  {
+   "title": "Jesus-Centering and Witnessing",
+   "path": "/jcw/",
+   "url": "https://wcatradio.com/jcw/",
+   "desc": "Catechist Romuald B. Simeone at St. Michael’s Mission, Batu Arang, Malaysia (where taken hostage) In a captivating fashion, you will find he elucidates, chapter by chapter, Jesus’ words for the…",
+   "kind": "program",
+   "host": "Romuald B. Simeone",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Just Plain Theology from Rome Sweet Rome",
+   "path": "/justplaintheology/",
+   "url": "https://wcatradio.com/justplaintheology/",
+   "desc": "Natalia Juzyn is currently living in Rome, studying theology at the Pontificia Universita S.",
+   "kind": "program",
+   "host": "Natalia Juzyn",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Know Your Faith",
+   "path": "/knowyourfaith/",
+   "url": "https://wcatradio.com/knowyourfaith/",
+   "desc": "Unapologetic…",
+   "kind": "program",
+   "host": "Robert Madrigal",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "La Lingua di Dante (L’Inferno) with Michela Ferri and Russell Crawford",
+   "path": "/inferno/",
+   "url": "https://wcatradio.com/inferno/",
+   "desc": "Dr. Michela Ferri holds a Ph.D. in Philosophy and is a Catholic Italian professor, writer, art critic.",
+   "kind": "program",
+   "host": "Dr. Michela Ferri”, ”W. Russell Crawford",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Life in the Spirit",
+   "path": "/lifeinthespirit/",
+   "url": "https://wcatradio.com/lifeinthespirit/",
+   "desc": "Bob is a Catholic Lay Evangelist living in Middletown, CT. He has a long history in radio, both secular and Christian (Catholic) dating back to 1963.",
+   "kind": "program",
+   "host": "Bob Olsen",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Living the Gospel of Life",
+   "path": "/livingthegospeloflife/",
+   "url": "https://wcatradio.com/livingthegospeloflife/",
+   "desc": "“The blood of Christ, while it reveals the grandeur of the Father’s love, show’s how precious man is in God’s eyes and how priceless is the value of his life.” Evangelium Vitae, 25 Catholic…",
+   "kind": "program",
+   "host": "Leticia Velasquez",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "The Lost Voice Programme",
+   "path": "/lostvoiceprogramme/",
+   "url": "https://wcatradio.com/lostvoiceprogramme/",
+   "desc": "John lives in Minnesota with his wife, and son. He works full time as a youth minister and teaches at local home school co-ops.",
+   "kind": "program",
+   "host": "Jonathan Stute & Jacob Nelson",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Mater et Magistra: A Guided Tour of the Catechism ​of the Catholic Church",
+   "path": "/materetmagistra/",
+   "url": "https://wcatradio.com/materetmagistra/",
+   "desc": "”Mater et Magistra,” a Latin expression which literally means “Mother and Teacher,” has long been used to refer to the authority that Christ Himself bestowed upon the Church, in entrusting to her the…",
+   "kind": "program",
+   "host": "Jayson Brunelle",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Mater et Magistra: The Glories of Mary with Jayson Brunelle and Keith Berube",
+   "path": "/gloriesofmary/",
+   "url": "https://wcatradio.com/gloriesofmary/",
+   "desc": "Jayson traces the history of Mariology: (1) the proclamation of Mary as Theotokos, in 431, at the Council of Ephesus; (2) Mary’s Perpetual Virginity – before, during and after the birth of Christ – defined by Pope St.",
+   "kind": "program",
+   "host": "Jayson Brunelle”, ”Keith Berube",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Medjugorje Apparition Webinar",
+   "path": "/medjugorje/",
+   "url": "https://wcatradio.com/medjugorje/",
+   "desc": "On June 25, 1981, Our Blessed Mother began a dialogue with six visionaries from Medjugorje, acclaiming “Praised be Jesus!” And her messages continue to this day.",
+   "kind": "course",
+   "host": "",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "The Messenger",
+   "path": "/themessenger/",
+   "url": "https://wcatradio.com/themessenger/",
+   "desc": "Listen below to the Series Finale of The Messenger. Recorded and aired on January 29, 2018.",
+   "kind": "program",
+   "host": "Tony Szalkiewicz",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Miracles",
+   "path": "/miracles/",
+   "url": "https://wcatradio.com/miracles/",
+   "desc": "There are many FREE and life-changing items on this website. Just CLICK on the following GOLD colored LINKS to find the items you are interested in: 1(a) … Our 4-books (every LINK includes many FREE…",
+   "kind": "program",
+   "host": "Tony Coscia",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "My Thots",
+   "path": "/mythots/",
+   "url": "https://wcatradio.com/mythots/",
+   "desc": "Michael Brinda founded New Horizons Computer Learning Centers ( www.newhorizons.com ) in 1982, started franchising around the world in 1992, and sold New Horizons to a public company in 1994.",
+   "kind": "program",
+   "host": "Michael Brinda",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "The Mystery of Israel and the Church",
+   "path": "/mystery/",
+   "url": "https://wcatradio.com/mystery/",
+   "desc": "Dr. Lawrence Feingold, in partnership with The Association of Hebrew Catholics, has offered for over a decade a Fall and Spring lecture series on various themes within The Mystery of Israel and the Church.",
+   "kind": "course",
+   "host": "Dr. Lawrence Feingold",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "The Open Door",
+   "path": "/theopendoor/",
+   "url": "https://wcatradio.com/theopendoor/",
+   "desc": "Thomas Storck, Christopher Zehnder, and Andrew Sorokowski discuss everything from art to politics in the light of Catholic social teaching.",
+   "kind": "program",
+   "host": "Thomas Storck, Christopher Zehnder, and Andrew Sorokowski",
+   "featured": true,
+   "sebastian": false
+  },
+  {
+   "title": "Parish Management and Operations with Michael Brinda",
+   "path": "/pmo/",
+   "url": "https://wcatradio.com/pmo/",
+   "desc": "If you like the show, order your copy today of the book, Parish Management and Operations: The Buck Stops Here , on which it is based!",
+   "kind": "program",
+   "host": "Michael Brinda",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Polycarp’s Paradigm with Eric Robinson",
+   "path": "/polycarpsparadigm/",
+   "url": "https://wcatradio.com/polycarpsparadigm/",
+   "desc": "Uniquely contributing to the conversation on faith and spirituality from the perspective of the Early Church Fathers and a modern-day Catholic convert from Evangelical roots.",
+   "kind": "program",
+   "host": "Eric Robinson",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Practical Catholic with David Suess",
+   "path": "/practicalcatholic/",
+   "url": "https://wcatradio.com/practicalcatholic/",
+   "desc": "​David Suess, CEO of Fairfax Data Systems, is a former Mustang Marine, Franciscan Tertiary, entrepreneur, speaker, coach and author.",
+   "kind": "program",
+   "host": "David Suess",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Purified by Fire",
+   "path": "/purifiedbyfire/",
+   "url": "https://wcatradio.com/purifiedbyfire/",
+   "desc": "“Purified by Fire” with David Suess, who will show how practical the Catholic Church is to building the peace, love and joy in family and work life while deepening their relationship with God through…",
+   "kind": "program",
+   "host": "David Suess",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Rivers of Living Water",
+   "path": "/riversoflivingwater/",
+   "url": "https://wcatradio.com/riversoflivingwater/",
+   "desc": "Mary Schwarz is a former journalist and PR consultant. A longtime convert to the Catholic Church, she has been teaching and lecturing on the faith to adults for the last ten years.",
+   "kind": "program",
+   "host": "Mary Schwarz",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "The Romuald B. Simeone Show",
+   "path": "/anordinaryman/",
+   "url": "https://wcatradio.com/anordinaryman/",
+   "desc": "Catechist Romuald B. Simeone at St. Michael’s Mission, Batu Arang, Malaysia (where taken hostage) TESTIMONIAL: “Romuald did a great job on his radio and youtube talks.",
+   "kind": "program",
+   "host": "Romuald B. Simeone",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Ronda Chervin’s Radio Journal",
+   "path": "/rondachervinsradiojournal/",
+   "url": "https://wcatradio.com/rondachervinsradiojournal/",
+   "desc": "Ronda Chervin is a Catholic evangelist whose books may be found at…",
+   "kind": "program",
+   "host": "Ronda Chervin",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "The Ronda View",
+   "path": "/rondaview/",
+   "url": "https://wcatradio.com/rondaview/",
+   "desc": "It is Ronda’s view that all of us need to change if we are to become the holy Catholics Jesus wants us to be – that is, with nothing but love of God and neighbor in our hearts.",
+   "kind": "program",
+   "host": "Ronda Chervin",
+   "featured": true,
+   "sebastian": false
+  },
+  {
+   "title": "School for Domestic Evangelization",
+   "path": "/sde/",
+   "url": "https://wcatradio.com/sde/",
+   "desc": "School for Domestic Evangelization We have developed a course that allows for a complete contextual (history, Jewish tradition, exegetical insights of the church fathers, & lectio divina inspiration)…",
+   "kind": "course",
+   "host": "",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Set Me Free",
+   "path": "/setmefree/",
+   "url": "https://wcatradio.com/setmefree/",
+   "desc": "Theresa Rivezzo is the founder of SET ME FREE Ministry. She has been involved in Street Ministry for 25 years.",
+   "kind": "program",
+   "host": "Theresa Rivezzo",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Spiritual Direction and the Moral Life by Fr. Dennis Billy, C.Ss.R.",
+   "path": "/sdml/",
+   "url": "https://wcatradio.com/sdml/",
+   "desc": "This series deals with the relationship between spiritual direction and the moral life.",
+   "kind": "program",
+   "host": "",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "St. Paul’s Letter’s to America",
+   "path": "/letterstoamerica/",
+   "url": "https://wcatradio.com/letterstoamerica/",
+   "desc": "Raymond C. Gerard is an attorney in St. Louis Missouri. He is also a Catholic radio and television program host, public speaker and researcher on the subject of miracles and extraordinary experiences involving the Eucharist.",
+   "kind": "program",
+   "host": "Raymond C. Gerard",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Sunday School",
+   "path": "/sundayschool/",
+   "url": "https://wcatradio.com/sundayschool/",
+   "desc": "Writer, philosopher, and “re-converted” Catholic, Pat Flynn focuses on presenting the Christian faith with reason and confidence through the use of apologetics and leading with example, some of it his.",
+   "kind": "program",
+   "host": "Pat Flynn",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Then Sings My Soul",
+   "path": "/thensingsmysoul/",
+   "url": "https://wcatradio.com/thensingsmysoul/",
+   "desc": "Program Description: Even in the midst of a joyfully devoted faith, every Catholic will face stress, pain, grief and loneliness as they navigate the many challenges of life in a secular and divided world.",
+   "kind": "program",
+   "host": "Annabelle Moseley",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "This is God Speaking by Romuald B. Simeone",
+   "path": "/thisisgodspeaking/",
+   "url": "https://wcatradio.com/thisisgodspeaking/",
+   "desc": "This is God Speaking” is a series of short, snappy 3-minute dramatizations hosted through Jesus-Centered Institute, LLC.",
+   "kind": "program",
+   "host": "Romuald B. Simeone",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Tony’s 50,000 Co-Incidence Miracles",
+   "path": "/tonys50k/",
+   "url": "https://wcatradio.com/tonys50k/",
+   "desc": "ITEM — 1 … Page down for your FREE Audio of our book … and return here LATER to click on these 5 Links if you want more info about our books and all of the OTHER FREE items available on this website.",
+   "kind": "program",
+   "host": "Tony Coscia",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Treasures in Heaven",
+   "path": "/treasuresinheaven/",
+   "url": "https://wcatradio.com/treasuresinheaven/",
+   "desc": "Get your copy of Treasures in Heaven Today! Treasures in Heaven is about seeing our lives and our future life through Christ’s invitation: “store up for yourselves treasures in Heaven.” With this…",
+   "kind": "program",
+   "host": "Dr. William Ayles",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "True Wealth",
+   "path": "/truewealth/",
+   "url": "https://wcatradio.com/truewealth/",
+   "desc": "True Wealth speaks to our spiritual truths using practical wisdom.",
+   "kind": "program",
+   "host": "Dave Basconi",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "The Two Wings",
+   "path": "/twowings/",
+   "url": "https://wcatradio.com/twowings/",
+   "desc": "Each week a Holy Apostles faculty member presents one idea that draws faith and reason together, conference-paper style: twenty minutes of presentation, then a half hour with colleagues.",
+   "kind": "program",
+   "host": "Holy Apostles faculty, convened by Sebastian Mahfood",
+   "sebastian": true,
+   "featured": false
+  },
+  {
+   "title": "Voice of Africa",
+   "path": "/voiceofafrica/",
+   "url": "https://wcatradio.com/voiceofafrica/",
+   "desc": "In the Voice of Africa, Catholic evangelist Emmanuel Peter Kahama will provide each week a short examination of a global news case, news from social media on politics, environment, science, religion,…",
+   "kind": "program",
+   "host": "Emmanuel Peter Kahama",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "The Voice of Hope (Sauti ya Matumaini), Tabora",
+   "path": "/voiceofhope/",
+   "url": "https://wcatradio.com/voiceofhope/",
+   "desc": "Peter Kahama's English and Swahili program from Tabora, Tanzania, on living the faith in East Africa.",
+   "kind": "program",
+   "host": "E. Peter Kahama",
+   "featured": true,
+   "sebastian": false
+  },
+  {
+   "title": "What is Truth?",
+   "path": "/whatistruth/",
+   "url": "https://wcatradio.com/whatistruth/",
+   "desc": "Jonathon Fessenden , editor of Missio Dei, is a Catholic Theology teacher living in Utah with an MA in Theology/Apologetics from Holy Apostles College and Seminary.",
+   "kind": "program",
+   "host": "Jonathon Fessenden of Missio Dei",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Why I Am Still Catholic",
+   "path": "/whyiamstillcatholic/",
+   "url": "https://wcatradio.com/whyiamstillcatholic/",
+   "desc": "Dr. Ronda Chervin hosts a delightful engagement with devoted Catholics as to why and how they maintain their faith in troubled times.",
+   "kind": "program",
+   "host": "Dr. Ronda Chervin",
+   "featured": true,
+   "sebastian": false
+  },
+  {
+   "title": "Witt and Wisdom – St. Louis: The Story of Catholic Evangelization of America’s Heartland Volume One: From Canoe to Cathedral",
+   "path": "/wittandwisdom-stlouis1/",
+   "url": "https://wcatradio.com/wittandwisdom-stlouis1/",
+   "desc": "Saint Louis: The Story of Catholic Evangelization of America’s Heartland, Volume One: From Canoe to Cathedral",
+   "kind": "program",
+   "host": "Msgr. Michael John Witt",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Witt and Wisdom: Medieval Church",
+   "path": "/wittandwisdom-medieval/",
+   "url": "https://wcatradio.com/wittandwisdom-medieval/",
+   "desc": "Medieval Catholic Church History",
+   "kind": "program",
+   "host": "Msgr. Michael John Witt",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Witt and Wisdom: Modern Church",
+   "path": "/wittandwisdom-modern/",
+   "url": "https://wcatradio.com/wittandwisdom-modern/",
+   "desc": "Modern Catholic Church History",
+   "kind": "program",
+   "host": "Msgr. Michael John Witt",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Witt and Wisdom: Saint Louis: The Lion and the Fourth City",
+   "path": "/wittandwisdom-stlouis2/",
+   "url": "https://wcatradio.com/wittandwisdom-stlouis2/",
+   "desc": "Saint Louis: The Lion and the Fourth City",
+   "kind": "program",
+   "host": "Msgr. Michael John Witt",
+   "sebastian": false,
+   "featured": false
+  },
+  {
+   "title": "Witt and Wisdom: The Twelve Generations",
+   "path": "/wittandwisdom-patristics/",
+   "url": "https://wcatradio.com/wittandwisdom-patristics/",
+   "desc": "Msgr. Michael John Witt on the first twelve generations of the Church: the early Church history course that began the Witt and Wisdom series.",
+   "kind": "program",
+   "host": "Msgr. Michael John Witt",
+   "featured": true,
+   "sebastian": false
+  },
+  {
+   "title": "Word of Mouth",
+   "path": "/wordofmouth/",
+   "url": "https://wcatradio.com/wordofmouth/",
+   "desc": "Michael Horn was born and raised in Affton, Missouri, and grew up in St.",
+   "kind": "program",
+   "host": "Michael Horn",
+   "sebastian": false,
+   "featured": false
+  }
+ ]
+}

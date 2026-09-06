@@ -34,3 +34,25 @@ collections:
               - { name: id, label: YouTube video ID, hint: The part after v= in the YouTube link. }
               - { name: title, label: Title }
               - { name: note, label: One line, required: false }
+
+  - name: wcat
+    label: WCAT Radio page
+    files:
+      - name: wcat
+        label: Programs
+        file: src/_data/wcat.json
+        fields:
+          - { name: intro, label: Intro paragraph, widget: text }
+          - name: shows
+            label: Programs
+            widget: list
+            summary: "{{fields.title}} · {{fields.host}}"
+            fields:
+              - { name: title, label: Title }
+              - { name: host, label: Host(s), required: false }
+              - { name: url, label: Link on wcatradio.com }
+              - { name: path, widget: hidden }
+              - { name: desc, label: One or two sentences, widget: text, required: false }
+              - { name: kind, label: Type, widget: select, options: [program, course], default: program }
+              - { name: sebastian, label: Hosted by Sebastian, widget: boolean, default: false, required: false }
+              - { name: featured, label: Start here (featured), widget: boolean, default: false, required: false }
