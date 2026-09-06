@@ -112,6 +112,20 @@ permalink: /
   </div>
 </section>
 
+<section class="band white">
+  <div class="wrap">
+    <div class="band-head"><h2>{{ videos.heading }}</h2><p class="band-note">{{ videos.intro }}</p></div>
+    <div class="videos">
+    {%- for v in videos.items %}
+      <figure class="video">
+        <div class="vframe"><iframe src="https://www.youtube-nocookie.com/embed/{{ v.id }}" title="{{ v.title }}" loading="lazy" allowfullscreen allow="accelerometer; encrypted-media; picture-in-picture"></iframe></div>
+        <figcaption><strong>{{ v.title }}</strong>{% if v.note %}<span>{{ v.note }}</span>{% endif %}</figcaption>
+      </figure>
+    {%- endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="band">
   <div class="wrap two-col">
     <img src="/images/header.jpg" alt="Driftwood on a beach, En Route's motto: Make the time" width="1920" height="900" loading="lazy">

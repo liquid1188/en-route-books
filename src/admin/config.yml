@@ -16,3 +16,21 @@ collections:
           - { name: intro, label: Featured intro }
           - { name: featured, label: Featured book slugs (in order), widget: list, field: { name: slug, label: Slug } }
           - { name: awards, label: Award winners, widget: list, fields: [ { name: slug, label: Book slug }, { name: award, label: Award } ] }
+
+  - name: videos
+    label: Homepage videos
+    files:
+      - name: videos
+        label: Watch section
+        file: src/_data/videos.json
+        fields:
+          - { name: heading, label: Heading }
+          - { name: intro, label: Intro line, widget: text }
+          - name: items
+            label: Videos
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: id, label: YouTube video ID, hint: The part after v= in the YouTube link. }
+              - { name: title, label: Title }
+              - { name: note, label: One line, required: false }

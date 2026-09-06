@@ -11,7 +11,11 @@ eleventyComputed:
 <div class="wrap page-head"><p class="kicker"><a href="/books/" style="text-decoration:none;color:inherit">Books</a></p><h1>{{ cat.name }}</h1><p class="lede">{{ cat.count }} titles.</p></div>
 <section class="band" style="padding-top:1.5rem">
   <div class="wrap">
-    <div class="books">
+    <div class="cats">
+      <a href="/books/">All books<span>{{ books.length }}</span></a>
+    {%- for c in categories %}<a href="/category/{{ c.slug }}/"{% if c.slug == cat.slug %} aria-current="page"{% endif %}>{{ c.name }}<span>{{ c.count }}</span></a>{% endfor %}
+    </div>
+    <div class="books" style="margin-top:2rem">
     {%- for b in books | inCat(cat.name) %}{% include "bookcard.njk" %}{% endfor %}
     </div>
   </div>
