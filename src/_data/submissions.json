@@ -1,0 +1,47 @@
+{
+  "lede": "En Route welcomes submissions that contribute to the Catholic intellectual and spiritual tradition: theology, philosophy, spirituality, literature, poetry, biography, and children's books, from established and emerging authors alike.",
+  "sections": [
+    {
+      "heading": "Before you submit",
+      "text": "Manuscripts must be complete and professionally edited. Submit in Microsoft Word (.doc or .docx). Include a cover page with the title, your full name, mailing address, phone number, and email address.\n\nIf your work includes illustrations, you must provide them. If it includes copyrighted material, you are responsible for securing permissions."
+    },
+    {
+      "heading": "Editorial expectations",
+      "text": "We expect submissions to be carefully prepared and polished. Authors are responsible for professional editing before submission; if that is out of reach, run the manuscript through Grammarly first. Strong manuscripts show clarity and coherence, proper grammar and structure, and faithfulness to Catholic teaching where it applies."
+    },
+    {
+      "heading": "Publishing model",
+      "text": "En Route is a traditional publisher. We assume the cost of preparing your book for publication. You receive a 10 percent royalty on retail sales and may purchase copies at a 40 percent discount. Books are printed on demand and sold through Amazon and wholesale, and our authors are invited onto WCAT Radio.\n\nYour first ten copies are free with your initial order. Discerning En Route? <a class=\"textlink\" href=\"https://enroutebooksandmedia.com/wp-content/uploads/2026/07/En-Route-Contract-Template-071126.docx\">Download the contract template</a>."
+    },
+    {
+      "heading": "Your platform",
+      "text": "Many authors begin without an established platform, and that is fine. We expect you to promote your work and to build a public presence where you can. Every author takes part in at least one interview on WCAT Radio. Other opportunities include reviews, speaking engagements, media appearances, and bookstore events."
+    },
+    {
+      "heading": "Scripture and Church texts",
+      "text": "Up to 5,000 words of Scripture (NABRE), the Catechism, and the Lectionary may be used without permission. Liturgical texts (ICEL) require notification. Securing every other permission is the author's responsibility."
+    },
+    {
+      "heading": "Good to know",
+      "text": "Submission does not guarantee acceptance. Publishing timelines vary with the production queue; authors who are ready and engaged tend to move through it faster."
+    }
+  ],
+  "steps": [
+    {
+      "title": "1. Send it",
+      "text": "Complete manuscript in Word, with the cover page, to {{ site.email }}."
+    },
+    {
+      "title": "2. We read it",
+      "text": "Every submission is read. You'll hear back."
+    },
+    {
+      "title": "3. We prepare it",
+      "text": "Design, typesetting, and formats for print and Kindle, at our cost."
+    },
+    {
+      "title": "4. It's published",
+      "text": "Paperback and Kindle, often hardback and Audible, listed on Amazon and available wholesale."
+    }
+  ]
+}

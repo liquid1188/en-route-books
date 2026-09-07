@@ -56,3 +56,84 @@ collections:
               - { name: kind, label: Type, widget: select, options: [program, course], default: program }
               - { name: sebastian, label: Hosted by Sebastian, widget: boolean, default: false, required: false }
               - { name: featured, label: Start here (featured), widget: boolean, default: false, required: false }
+
+  - name: pages
+    label: Page text
+    description: "The words on the About and Submissions pages. Made a mistake? Open Site history (/admin/history/) to restore any earlier version, or text Andrew."
+    files:
+      - name: about
+        label: About En Route
+        file: src/_data/about.json
+        fields:
+          - { name: lede, label: Line under the heading, widget: text }
+          - { name: body, label: About the house, widget: markdown, hint: Blank line between paragraphs. }
+          - { name: crestCaption, label: Crest caption, widget: text }
+          - name: facts
+            label: Facts box
+            widget: list
+            summary: "{{fields.label}}: {{fields.value}}"
+            fields:
+              - { name: label, label: Label }
+              - { name: value, label: Value }
+          - name: founders
+            label: Founders
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { name: name, label: Name }
+              - { name: role, label: Role line }
+              - { name: photo, label: Photo, widget: image }
+              - { name: bio, label: Bio, widget: markdown }
+      - name: submissions
+        label: Submit a manuscript
+        file: src/_data/submissions.json
+        fields:
+          - { name: lede, label: Line under the heading, widget: text }
+          - name: sections
+            label: Sections
+            widget: list
+            summary: "{{fields.heading}}"
+            fields:
+              - { name: heading, label: Heading }
+              - { name: text, label: Text, widget: markdown }
+          - name: steps
+            label: The steps (right column)
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - { name: title, label: Title (e.g. 1. Send it) }
+              - { name: text, label: One line }
+
+  - name: homepage
+    label: Homepage picks
+    files:
+      - name: featured
+        label: Featured books and awards
+        file: src/_data/featured.json
+        description: "Book slugs are the last part of a book's web address, for example tohisface in /books/tohisface/."
+        fields:
+          - { name: intro, label: Intro line for the Featured band, widget: text }
+          - { name: featured, label: Featured book slugs (in order), widget: list, field: { name: slug, label: Book slug } }
+          - name: awards
+            label: Award winners
+            widget: list
+            summary: "{{fields.slug}} · {{fields.award}}"
+            fields:
+              - { name: slug, label: Book slug }
+              - { name: award, label: Award }
+      - name: authorsets
+        label: Author collections
+        file: src/_data/authorsets.json
+        fields:
+          - name: collections
+            label: Collections
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - { name: name, label: Collection name }
+              - { name: short, label: Short name }
+              - { name: slug, label: Web address slug }
+              - { name: banner, label: Banner image, widget: image }
+              - { name: tagline, label: Tagline, widget: text }
+              - { name: match, label: Author name match (lowercase word found in the author field), hint: Books whose author contains this word appear in the collection. }
+              - { name: intro, label: Intro paragraphs, widget: list, field: { name: p, label: Paragraph, widget: text } }

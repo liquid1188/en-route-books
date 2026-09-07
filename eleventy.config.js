@@ -1,5 +1,8 @@
+import markdownIt from "markdown-it";
+const mdlib = markdownIt({ html: true, typographer: true });
 import { HtmlBasePlugin } from "@11ty/eleventy";
 export default function (eleventyConfig) {
+  eleventyConfig.addFilter("md", (t) => mdlib.render(t || ""));
   eleventyConfig.addPlugin(HtmlBasePlugin);
   eleventyConfig.addPassthroughCopy({ "src/css": "css", "src/admin": "admin", "src/images": "images", "src/search.json": "search.json" });
   eleventyConfig.addGlobalData("buildId", () => Date.now().toString(36));
